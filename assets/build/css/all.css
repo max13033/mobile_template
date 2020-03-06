@@ -16079,7 +16079,13 @@ button:hover{
     position:fixed;
     background-color:#027;
     z-index:9999;
-    max-width:700px
+    max-width:700px;
+    animation: header 1s ease;
+}
+@keyframes header{
+      0% {opacity: 0;}
+    100% {opacity: 1;}
+    
 }
 .header__logo-link{
     display:block;

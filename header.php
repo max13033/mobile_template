@@ -46,18 +46,20 @@ global $APPLICATION;
                 </div>
             </div>
         </div>
-        <div class="header-menu container">
-            <div class="row d-flex align-items-end justify-content-between ">
-                <div class="col-4 d-flex justify-content-start">
-                    <a href="javascript:void(0);" class="icon-B"><span></span><span></span><span></span></a>
-                    <a href="javascript:void(0);" class="search"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt=""></a>
-                </div>
-                <div>
-                    <? area('header_logo') ?>
-                </div>
-                <div class="col-4 d-flex justify-content-end">
-                    <button class="person" data-toggle="modal" data-target="#exampleModal"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/PersonHeader.svg" alt="User"></button>
-                    <a href="javascript:void(0);" class="cart"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/CartHeader.svg" alt="cart"></a>
+        <div style = "height: 48px;">   <!-- добавил блок, чтобы при прокрутке меню, переходя в fixed не прыгало -->
+            <div class="header-menu container">
+                <div class="row d-flex align-items-end justify-content-between ">
+                    <div class="col-4 d-flex justify-content-start">
+                        <a href="javascript:void(0);" class="icon-B"><span></span><span></span><span></span></a>
+                        <a href="javascript:void(0);" class="search"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt=""></a>
+                    </div>
+                    <div>
+                        <? area('header_logo') ?>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <button class="person" data-toggle="modal" data-target="#exampleModal"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/PersonHeader.svg" alt="User"></button>
+                        <a href="javascript:void(0);" class="cart"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/CartHeader.svg" alt="cart"></a>
+                    </div>
                 </div>
             </div>
         </div>
