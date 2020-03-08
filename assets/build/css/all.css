@@ -16396,7 +16396,8 @@ button:hover{
     line-height:16px;
     margin-bottom:5px;
     max-width:198px;
-    width:100%
+    width:100%;
+    min-height: 64px;
 }
 .action__cost{
     font-size:14px;
@@ -16611,7 +16612,7 @@ button:hover{
 }
 .service__items{
     padding-left:28px;
-    margin-top:13px
+    /*margin-top:13px*/
 }
 .service__item{
     display:flex;
@@ -16619,11 +16620,11 @@ button:hover{
     justify-content:flex-start;
     align-items:flex-start;
     font-size:16px;
-    margin-bottom:27px;
+    margin-top: 27px;     /*margin-bottom:27px*/
     color:#3c5eb3
 }
 .service__item:last-child{
-    margin-bottom:10px
+    margin-bottom:20px;    /*10*/
 }
 .service__item:hover{
     color:#3c5eb3;
@@ -16704,7 +16705,8 @@ button:hover{
     line-height:16px;
     margin-bottom:5px;
     max-width:198px;
-    width:100%
+    width:100%;
+    min-height: 64px;
 }
 .product__cost{
     font-size:14px;
