@@ -17100,3 +17100,18 @@ html{
 }
 
 }
+/*  ================    FROM MAX    ==============================  */
+
+/*  =======     Выяснить, почему не срабатывает width из script.min.js      */
+.s2 .swiper-slide{
+    width: 106px;
+}
+.s3 .swiper-slide{
+    width: 222px;
+}
+.s4 .swiper-slide{
+    width: 350px;
+}
+.s6 .swiper-slide{
+    width: 230px;
+}
