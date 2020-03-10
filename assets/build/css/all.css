@@ -14944,7 +14944,11 @@ img{
 [data-background-color]:not([data-background-color=gray]){
     color:#fff
 }
-[data-background-color]:not([data-background-color=gray]) .social-description h2,[data-background-color]:not([data-background-color=gray]) .title,[data-background-color]:not([data-background-color=gray]) p,[data-background-color]:not([data-background-color=gray]) p.blockquote,[data-background-color]:not([data-background-color=gray]) p.blockquote small{
+[data-background-color]:not([data-background-color=gray]) .social-description h2,
+[data-background-color]:not([data-background-color=gray]) .title,
+[data-background-color]:not([data-background-color=gray]) p,
+[data-background-color]:not([data-background-color=gray]) p.blockquote,
+[data-background-color]:not([data-background-color=gray]) p.blockquote small{
     color:#fff
 }
 [data-background-color]:not([data-background-color=gray]) .separator{
@@ -15936,7 +15940,7 @@ body{
     position:absolute;
     width:15px;
     height:10px;
-    bottom:5px;
+    bottom:8px;
     background:url(../img/arrow2.png) no-repeat center
 }
 h3{
@@ -16210,7 +16214,7 @@ button:hover{
     flex-direction:column;
     background-color:#fff;
     border-radius:20px;
-    padding:21px 0;
+    padding:19px 0;
     margin-bottom:3px
 }
 .popular .swiper-slide{
@@ -16232,7 +16236,7 @@ button:hover{
     color:#000
 }
 .popular__title{
-    margin-bottom:25px
+    margin-bottom:20px
 }
 .popular__title-link{
     margin-bottom:0
@@ -16250,11 +16254,11 @@ button:hover{
     left:255px
 }
 .popular__img{
-    margin-bottom:15px
+    margin-bottom:16px
 }
 .popular__text{
     font-size:14px;
-    line-height:1.1em;
+    line-height:1.2em;
     margin:0
 }
 .popular__wrapper{
