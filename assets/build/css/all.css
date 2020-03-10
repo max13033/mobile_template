@@ -488,8 +488,7 @@ button.swiper-pagination-bullet{
     100%{
     -webkit-transform:rotate(360deg);
     transform:rotate(360deg)
-}
-
+    }
 }
 .swiper-container .swiper-notification{
     position:absolute;
@@ -799,14 +798,14 @@ button.swiper-pagination-bullet{
 
 @media (max-width:768px){
     .parallax .parallax-image{
-    width:100%;
-    height:640px;
-    overflow:hidden
-}
-.parallax .parallax-image img{
-    height:100%;
-    width:auto
-}
+        width:100%;
+        height:640px;
+        overflow:hidden
+    }
+    .parallax .parallax-image img{
+        height:100%;
+        width:auto
+    }
 
 }
 .social-buttons-demo .btn{
@@ -839,23 +838,22 @@ button.swiper-pagination-bullet{
 
 @media (max-width:991px){
     .fixed-section.affix{
-    position:relative;
-    margin-bottom:100px
-}
-
+        position:relative;
+        margin-bottom:100px
+    }
 }
 
 @media (max-width:768px){
     .btn,
-.tn-morphing{
-    margin-bottom:10px
-}
-.parallax .motto{
-    top:170px;
-    margin-top:0;
-    font-size:60px;
-    width:270px
-}
+    .tn-morphing{
+        margin-bottom:10px
+    }
+    .parallax .motto{
+        top:170px;
+        margin-top:0;
+        font-size:60px;
+        width:270px
+    }
 
 }
 .logo-container .brand,
@@ -998,8 +996,8 @@ button.swiper-pagination-bullet{
 
 @media screen and (max-width:991px){
     .section-navbars .navbar-collapse{
-    display:none!important
-}
+        display:none!important
+    }
 
 }
 .fotorama__arr:focus:after,
@@ -1166,11 +1164,11 @@ button.swiper-pagination-bullet{
 
 @media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:2dppx){
     .fotorama__arr,
-.otorama__fullscreen-icon,
-.otorama__video-close,
-.otorama__video-play{
-    background:url(fotorama@2x.png) 0 0/96px 160px no-repeat
-}
+    .otorama__fullscreen-icon,
+    .otorama__video-close,
+    .otorama__video-play{
+        background:url(fotorama@2x.png) 0 0/96px 160px no-repeat
+    }
 
 }
 .fotorama__thumb{
@@ -1180,13 +1178,12 @@ button.swiper-pagination-bullet{
 
 @media print{
     .fotorama__arr,
-.otorama__fullscreen-icon,
-.otorama__thumb-border,
-.otorama__video-close,
-.otorama__video-play{
-    background:0 0!important
-}
-
+    .otorama__fullscreen-icon,
+    .otorama__thumb-border,
+    .otorama__video-close,
+    .otorama__video-play{
+        background:0 0!important
+    }
 }
 .fotorama{
     min-width:1px;
@@ -1423,26 +1420,23 @@ button.swiper-pagination-bullet{
 }
 
 @-webkit-keyframes spinner{
-    0%{
-    -webkit-transform:rotate(0);
-    transform:rotate(0)
-}
-100%{
-    -webkit-transform:rotate(360deg);
-    transform:rotate(360deg)
-}
-
+    0%{-webkit-transform:rotate(0);
+               transform:rotate(0)
+    }
+    100%{-webkit-transform:rotate(360deg);
+                 transform:rotate(360deg)
+    }
 }
 
 @keyframes spinner{
     0%{
     -webkit-transform:rotate(0);
-    transform:rotate(0)
-}
-100%{
-    -webkit-transform:rotate(360deg);
-    transform:rotate(360deg)
-}
+            transform:rotate(0)
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg)
+    }
 
 }
 .fotorama__wrap--css3 .fotorama__spinner{
@@ -7810,7 +7804,8 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{
     justify-content:flex-start!important
 }
 .justify-content-end{
-    justify-content:flex-end!important
+    justify-content:flex-end!important;
+    padding-right: 15px;   /* Max    добавил отступ справа*/
 }
 .justify-content-center{
     justify-content:center!important
@@ -16020,10 +16015,10 @@ button:hover{
     text-align:center;
     background-color:#027;
     border-radius:10px;
-    margin-top:29px;
+    margin-top:30px;
     font-size:16px;
     font-weight:400;
-    padding:4px 0;
+    padding:4px 0 2px;
     transition:.3s
 }
 .long-btn:after{
@@ -16034,7 +16029,7 @@ button:hover{
     background:url(../img/arrow.png) no-repeat center;
     position:absolute;
     right:8px;
-    bottom:12px
+    bottom:10px
 }
 .long-btn:hover{
     color:#fff;
@@ -16100,7 +16095,7 @@ button:hover{
     display:block;
     position:relative;
     margin-right:12px;
-    margin-left:-4px
+    margin-left: 11px
 }
 .icon-B span{
     position:absolute;
@@ -17099,7 +17094,7 @@ html{
 @keyframes animate-stripes{
     100%{
     background-position:-100px 0
-}
+    }
 
 }
 /*  ================    FROM MAX    ==============================  */
