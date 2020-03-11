@@ -2919,7 +2919,8 @@ pre code{
 }
 @media (min-width:576px){
     .container{
-        max-width:540px
+/*        max-width:540px;
+        margin: auto;*/
     }
 }
 
@@ -16006,7 +16007,7 @@ button:hover{
     opacity:.8
 }
 .topdesk{
-    padding:11px 0;
+    padding:11px 10px;
     background:#fff;
     text-align:center
 }
@@ -16716,7 +16717,7 @@ button:hover{
 }
 .contact{
     position:relative;
-    padding:30px 25px 25px 25px
+    padding:30px 40px 25px 40px
 }
 .contact__link{
     display:block;
@@ -16731,7 +16732,9 @@ button:hover{
     margin-bottom:8px;
     line-height:24px;
     font-size:16px;
-    color:#fff
+    color:#fff;
+    font-style: normal;
+    font-weight: normal;
 }
 .contact__link:hover{
     text-decoration:none;

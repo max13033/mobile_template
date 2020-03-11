@@ -26,12 +26,14 @@
         </div>
     </section>
     <!-- <div class="phone"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/vektorBL.png" alt="phone"></div> -->  <!--    телефонная трубка внизу (при разкомментировании поправить php тег открытия)   -->
-    <div class="phone__window">
-        <a href="#bx24_call" onclick="vallesMobile.openB24Chat()"  class="phone__item"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/fu1.svg" alt="img">Обратная связь</a>
-        <a href="#whatsapp" target="_blank" class="phone__item"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/fu2.svg" alt="img"> <span>Прислать список товаров в WhatsApp</span> </a>
-        <a href="#bx24_question-answ" onclick="vallesMobile.openB24Chat()" class="phone__item"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/fu3.svg" alt="img">Онлайн-чат</a>
-        <a href="#bx24_order-call" onclick="vallesMobile.openB24Callback()" class="phone__item"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/fu4.svg" alt="img">Заказать звонок</a>
-    </div>
+    
+<!--     <div class="phone__window">
+        <a href="#bx24_call" onclick="vallesMobile.openB24Chat()"  class="phone__item"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/fu1.svg" alt="img">Обратная связь</a>
+        <a href="#whatsapp" target="_blank" class="phone__item"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/fu2.svg" alt="img"> <span>Прислать список товаров в WhatsApp</span> </a>
+        <a href="#bx24_question-answ" onclick="vallesMobile.openB24Chat()" class="phone__item"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/fu3.svg" alt="img">Онлайн-чат</a>
+        <a href="#bx24_order-call" onclick="vallesMobile.openB24Callback()" class="phone__item"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/fu4.svg" alt="img">Заказать звонок</a>
+    </div> -->
+
     <div class="btntop"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/vektorBR.png" alt="phone"></div>
 </footer>
 
@@ -227,6 +229,7 @@
                     </div>
                 </div>
             </div>
+        </div>   <!--   =max=  дописал закрывающий тег    -->
     </section>
 <?} ?>
 
