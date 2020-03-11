@@ -16911,14 +16911,15 @@ button:hover{
     margin-bottom:35px
 }
 .popup__title{
-    padding-top:5px;
-    padding-bottom:5px;
-    margin-bottom:3px;
+    padding-top: 8px;
+    padding-bottom:8px;
+    margin-bottom: 15px;
+    padding-left: 15px;
     text-align:left;
     font-size:16px;
     color:#fff;
     background-color:#3c5eb3;
-    max-width:250px
+    width:250px
 }
 .popup__title:after{
     content:'';
@@ -16979,7 +16980,7 @@ button:hover{
     color:#fff
 }
 .popup__select{
-    padding-left:15px;
+    /*padding-left:15px;*/
     margin-bottom:35px
 }
 .popup__2lvl{
@@ -17009,6 +17010,9 @@ button:hover{
 .b-main-menu-mobile a:hover{
     color:#fff
 }
+.b-main-menu-mobile:last-child{
+    margin-bottom: 25px;
+}
 .b-mobile--icons{
     width:16px;
     height:16px;
@@ -17034,9 +17038,9 @@ button:hover{
 }
 .b-mobile-menu__item{
     display:flex;
-    margin-bottom:25px;
+    margin-bottom: 13px;
     align-items:center;
-    font-size:15px;
+    font-size: 18px;
     font-weight:400
 }
 .b-mobile-menu__title.b-mobile-menu__item{
