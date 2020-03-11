@@ -23,7 +23,7 @@ $this->setFrameMode(true);
 //unset($arResult['ITEMS'][0]['PROPERTIES']);
 //pr($arResult['ITEMS'][0]);
 ?>
-<div class="swiper-container s6">
+<div class="swiper-container s3">
     <div class="swiper-wrapper">
         <?foreach ($arResult['ITEMS'] as $item){
 //            pr($item);
