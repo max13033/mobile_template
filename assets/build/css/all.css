@@ -16588,11 +16588,12 @@ button:hover{
     justify-content:flex-start;
     align-items:flex-start;
     font-size:16px;
-    margin-top: 27px;     /*margin-bottom:27px*/
-    color:#3c5eb3
+    margin-top: 13px;     
+    margin-bottom:26px;
+    color:#3c5eb3;
 }
 .service__item:last-child{
-    margin-bottom:20px;    /*10*/
+    margin-bottom:12px;    /*10*/
 }
 .service__item:hover{
     color:#3c5eb3;
