@@ -16559,6 +16559,7 @@ button:hover{
     line-height: 28px;
     color: #3c5eb3;
     background-color: #e0e9ff;
+    margin-bottom: 4px;
 }
 .service__title:after{
     content:'';
@@ -16593,7 +16594,7 @@ button:hover{
     color:#3c5eb3;
 }
 .service__item:last-child{
-    margin-bottom:12px;    /*10*/
+    margin-bottom: 8px;    /*10*/
 }
 .service__item:hover{
     color:#3c5eb3;
