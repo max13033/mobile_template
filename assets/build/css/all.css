@@ -7780,7 +7780,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{
 }
 .justify-content-end{
     justify-content:flex-end!important;
-    padding-right: 15px;   /* Max    добавил отступ справа*/
+    /*padding-right: 15px;*/   /* Max    добавил отступ справа*/
 }
 .justify-content-center{
     justify-content:center!important
@@ -16046,6 +16046,7 @@ button:hover{
     z-index:9999;
     max-width:700px;
     animation: header 1s ease;
+    width: 100%;
 }
 @keyframes header{
       0% {opacity: 0;}
@@ -16064,12 +16065,12 @@ button:hover{
     height:40px;
     display:block;
     position:relative;
-    margin-right:12px;
-    margin-left: 11px
+    margin-right: 4px;
+    margin-left:  4px
 }
 .icon-B span{
     position:absolute;
-    right:0;
+    right: 8px;
     display:block;
     height:2px;
     background-color:#fff
@@ -16557,7 +16558,7 @@ button:hover{
     font-size: 16px;
     line-height: 28px;
     color: #3c5eb3;
-    background-color: #e0e9ff
+    background-color: #e0e9ff;
 }
 .service__title:after{
     content:'';
