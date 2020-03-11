@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-    <div class="phone"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/vektorBL.png" alt="phone"></div>
+    <!-- <div class="phone"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/vektorBL.png" alt="phone"></div> -->  <!--    телефонная трубка внизу (при разкомментировании поправить php тег открытия)   -->
     <div class="phone__window">
         <a href="#bx24_call" onclick="vallesMobile.openB24Chat()"  class="phone__item"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/fu1.svg" alt="img">Обратная связь</a>
         <a href="#whatsapp" target="_blank" class="phone__item"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/fu2.svg" alt="img"> <span>Прислать список товаров в WhatsApp</span> </a>
