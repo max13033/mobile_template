@@ -17019,20 +17019,20 @@ button:hover{
     height:16px;
     margin-right:10px
 }
-.b-mobile-menu__item-open:after{
+.b-mobile-menu__item-open div + div{
     content:'';
     display:block;
     height: 7px;
-    width: 10px;
+    min-width: 10px;
     background:url(../img/arrowBW.svg) no-repeat center;
     margin-left:10px;
     background-size:contain;
 }
-.b-mobile-menu__item-link:after{
+.b-mobile-menu__item-link div + div{
     content:'';
     display:block;
     height:7px;
-    width:13px;
+    min-width:13px;
     background:url(../img/arrowRW.svg) no-repeat center;
     margin-left:10px;
     background-size:contain
@@ -17046,8 +17046,8 @@ button:hover{
     font-size: 18px;
     font-weight:400
 }
-.b-mobile-menu__item span{
-	
+.b-mobile-menu__item div:first-child{
+
 }
 /*.b-mobile-menu__title.b-mobile-menu__item{		=Max= не нашел тег .b-mobile-menu__title
     font-size:18px

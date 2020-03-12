@@ -65,7 +65,8 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
                             ?>
                             <img data-src="<?=$image?>" class="b-mobile--icons">
                         <?}?>
-                        <span><? echo $arSection["NAME"]; ?></span>
+                        <div><? echo $arSection["NAME"]; ?></div>
+                        <div></div>         <!--  отображает стрелку   вместо after -->
                     </a>
         <?
         $intCurrentDepth = $arSection['RELATIVE_DEPTH_LEVEL'];
