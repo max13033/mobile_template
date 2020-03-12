@@ -16998,13 +16998,12 @@ button:hover{
 .b-main-menu-mobile{
     margin:0;
     padding:0;
-    padding-left:0
 }
 .b-main-menu-mobile ul{
     padding-left:10px
 }
 .b-main-menu-mobile li{
-    list-style:none
+    list-style:none;
 }
 .b-main-menu-mobile a{
     color:#fff
@@ -17023,11 +17022,11 @@ button:hover{
 .b-mobile-menu__item-open:after{
     content:'';
     display:block;
-    height:5px;
-    width:9px;
+    height: 7px;
+    width: 10px;
     background:url(../img/arrowBW.svg) no-repeat center;
     margin-left:10px;
-    background-size:cover
+    background-size:contain;
 }
 .b-mobile-menu__item-link:after{
     content:'';
@@ -17040,14 +17039,19 @@ button:hover{
 }
 .b-mobile-menu__item{
     display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin-bottom: 13px;
     align-items:center;
     font-size: 18px;
     font-weight:400
 }
-.b-mobile-menu__title.b-mobile-menu__item{
-    font-size:18px
+.b-mobile-menu__item span{
+	
 }
+/*.b-mobile-menu__title.b-mobile-menu__item{		=Max= не нашел тег .b-mobile-menu__title
+    font-size:18px
+}*/
 .offer>div{
     width:100%
 }
