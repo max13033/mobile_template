@@ -52,6 +52,14 @@ global $APPLICATION;
                     <div class="col-4 d-flex justify-content-start">
                         <a href="javascript:void(0);" class="icon-B"><span></span><span></span><span></span></a>
                         <a href="javascript:void(0);" class="search"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt=""></a>
+                        <div class = "search_popup">    <!-- выплывающая панель поиска -->
+                            <div class = "search_button">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt="">
+                            </div>
+                            <form>
+                                    <input type = "text" placeholder="Ищу выгоду">
+                            </form>
+                        </div>
                     </div>
                     <div>
                         <? area('header_logo') ?>
