@@ -25,4 +25,3 @@ var vallesMobile = {
         $('a[href="#whatsapp"]').attr('href', $('a[href="https://wa.me/79884888030"]').attr('href'))
     }
 }
-

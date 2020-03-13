@@ -20,7 +20,6 @@ global $APPLICATION;
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <link href="<?=SITE_TEMPLATE_PATH?>/assets/build/css/all.css?v=dkjawdawhk" rel="stylesheet" />
-
     <? if (!hasGooAgent()) {?>
         <script>
             (function(d) {
@@ -29,6 +28,13 @@ global $APPLICATION;
                 s.src = 'https://multisearch.io/plugin/10685';
                 if (d.head) d.head.appendChild(s);
             })(document);
+            cross.onclick = function(){
+                document.getElementById('search_popup').style.left = '100%';
+            }
+            var search_a = document.getElementsByClassName('search')[0];
+            search_a.onclick = function(){
+                document.getElementById('search_popup').style.left = '0'
+            }    
         </script>
     <?} ?>
 </head>
@@ -63,7 +69,6 @@ global $APPLICATION;
                             </div>
                             <div id = "cross">
                                 <span> &#10006; </span>
-                                <!-- <span></span> -->
                             </div>    
                         </div>
                     </div>

@@ -13077,21 +13077,15 @@ body{
 @-webkit-keyframes nc-icon-spin{
     0%{
     -webkit-transform:rotate(0)
-}
-100%{
+    }
+    100%{
     -webkit-transform:rotate(360deg)
-}
-
+    }
 }
 
 @-moz-keyframes nc-icon-spin{
-    0%{
-    -moz-transform:rotate(0)
-}
-100%{
-    -moz-transform:rotate(360deg)
-}
-
+    0%{-moz-transform:rotate(0)}
+    100%{-moz-transform:rotate(360deg)}
 }
 
 @keyframes nc-icon-spin{
@@ -13101,15 +13095,14 @@ body{
     -ms-transform:rotate(0);
     -o-transform:rotate(0);
     transform:rotate(0)
-}
-100%{
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    transform:rotate(360deg)
-}
-
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
 }
 .now-ui-icons.ui-1_check:before{
     content:"\ea22"
@@ -16050,11 +16043,8 @@ button:hover{
 	height: 48px;
 	background-color: #027;
 	box-sizing: border-box;
-    animation: search_popup 1s ease;
-    -webkit-animation: search_popup 1s ease;
-}
-@keyframes search_popup{
-
+            transition: left 0.3s ease;
+    -webkit-transition: left 0.3s ease;
 }
 #search_popup input{
     color: #fff;
@@ -16064,14 +16054,15 @@ button:hover{
 }
 #search_popup input::-moz-placeholder { 
     color: #fff;
+    opacity: 0.5;
 }
 #search_popup input::-webkit-input-placeholder { 
     color: #fff;
+    opacity: 0.5;
 }
 #search_popup span{
     color: #fff;
     font-size: 20px;
-    font-weight: 200;
 }
 #search_popup: div:first-child{
     width: 40px;
@@ -16086,8 +16077,8 @@ button:hover{
     margin-right: 17px;
 }
 .header-menu{
-    position:relative;
-    padding:4px 0;
+    position: relative;
+    padding: 4px 0;
 }
 .header-menu-active{
     position:fixed;
@@ -16095,13 +16086,7 @@ button:hover{
     z-index:9999;
     max-width:700px;
     width: 100%;
-    /*animation: header 0.5s ease;*/
 }
-/*@keyframes header{
-      0% {opacity: 0.7;}
-    100% {opacity: 1;}
-    
-}*/
 .header__logo-link{
     display:block;
     position:absolute;
