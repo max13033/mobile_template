@@ -6912,6 +6912,12 @@ button.close{
     flex:1 1 auto;
     padding:1rem
 }
+.modal-body input::-moz-placeholder{
+    color: #0034C9;
+}
+.modal-body input::-webkit-input-placeholder{ 
+    color: #0034C9;
+}
 .modal-footer{
     display:flex;
     align-items:center;
@@ -14126,8 +14132,11 @@ img{
     padding-right: 32px;
     padding-bottom:16px;
     padding-left: 32px;
-    line-height:1.5
+    line-height:1.5;
 }
+.modal-content .modal-body > div{
+    position: relative;
+}    
 .modal-content .modal-footer{
     border-top:none;
     padding-right:24px;
@@ -16862,23 +16871,34 @@ button:hover{
 }
 .modal-form input[type=text]{
     width:100%;
-    border-color:#027;
-    border-radius:10px;
+    border-color:#0034C9;
+    border-radius:6px;
     padding-left:5px;
     margin-bottom:15px
 }
+.modal-form input[type=password]{
+    border-color:#0034C9;
+    border-radius:6px;
+    padding-left:5px;
+    margin-bottom:13px
+}    
 .modal-btn{
-    width:100%;
-    margin:0;
+/*    width:100%;
+    margin:0;*/
     border:none;
     outline:0;
-    border-radius:10px;
+    border-radius:6px;
     background-color:#027;
     color:#fff;
-    line-height:36px;
-    font-size:16px;
+    height: 30px;
+/*    line-height:36px;
+*/    font-size:16px;
     padding-left:10px;
-    padding-right:10px
+    padding-right:10px;
+    position: absolute;
+    right: 0;
+    font-size:16px;
+    width: 75px;
 }
 .modal-box input{
     margin-right:10px

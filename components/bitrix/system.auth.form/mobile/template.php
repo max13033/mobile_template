@@ -48,11 +48,11 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
                 });
             </script>
         </div>
-        <div class="col-8">
+        <div class="col-12">
             <input type="password"
                    name="USER_PASSWORD"
-                   maxlength="255"
-                   size="17"
+                   maxlength="200"
+                   size="15"
                    autocomplete="off"
                    placeholder="<?=GetMessage("AUTH_PASSWORD")?>">
 
@@ -61,21 +61,18 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
 					<div class="bx-auth-secure-icon"></div>
 				</span>
                 <noscript>
-				<span class="bx-auth-secure" title="<?echo GetMessage("AUTH_NONSECURE_NOTE")?>">
-					<div class="bx-auth-secure-icon bx-auth-secure-unlock"></div>
-				</span>
+    				<span class="bx-auth-secure" title="<?echo GetMessage("AUTH_NONSECURE_NOTE")?>">
+    					<div class="bx-auth-secure-icon bx-auth-secure-unlock"></div>
+    				</span>
                 </noscript>
                 <script type="text/javascript">
                     document.getElementById('bx_auth_secure<?=$arResult["RND"]?>').style.display = 'inline-block';
                 </script>
             <?endif?>
-        </div>
-
-        <div class="col-4">
             <input type="submit" class="modal-btn" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>" />
         </div>
 
-        <div class="col-6 modal-box">
+        <div class="col-12 modal-box">
             <?if ($arResult["STORE_PASSWORD"] == "Y"):?>
                 <input type="checkbox" id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y">
                 <label for="USER_REMEMBER_frm"><?echo GetMessage("AUTH_REMEMBER_SHORT")?></label>
