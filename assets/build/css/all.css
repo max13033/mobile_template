@@ -6843,9 +6843,12 @@ button.close{
 }
 .modal-dialog{
     position:relative;
-    width:auto;
-    margin:.5rem;
-    pointer-events:none
+    width: 325px;
+    height: 405px;
+    margin: auto;
+    margin-top: 130px;
+    pointer-events:none;
+    box-sizing: border-box;
 }
 .modal.fade .modal-dialog{
     transition:transform .3s ease-out;
@@ -6901,7 +6904,8 @@ button.close{
 }
 .modal-title{
     margin-bottom:0;
-    line-height:1.5
+    line-height:1.5;
+    font-size:20px;
 }
 .modal-body{
     position:relative;
@@ -14102,7 +14106,7 @@ img{
 }
 .modal-content .modal-header{
     border-bottom:none;
-    padding-top:24px;
+    padding-top:11px;
     padding-right:24px;
     padding-bottom:0;
     padding-left:24px
@@ -14118,11 +14122,11 @@ img{
     margin-bottom:0
 }
 .modal-content .modal-body{
-    padding-top:24px;
-    padding-right:24px;
+    padding-top:16px;
+    padding-right: 32px;
     padding-bottom:16px;
-    padding-left:24px;
-    line-height:1.9
+    padding-left: 32px;
+    line-height:1.5
 }
 .modal-content .modal-footer{
     border-top:none;
@@ -16856,14 +16860,11 @@ button:hover{
     flex-direction:column;
     align-items:center
 }
-.modal-title{
-    font-size:20px
-}
 .modal-form input[type=text]{
     width:100%;
     border-color:#027;
     border-radius:10px;
-    padding-left:10px;
+    padding-left:5px;
     margin-bottom:15px
 }
 .modal-btn{
