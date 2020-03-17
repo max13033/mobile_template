@@ -16878,7 +16878,8 @@ button:hover{
     border-color:#0034C9;
     border-radius:6px;
     padding-left:5px;
-    margin-bottom:7px
+    margin-bottom:7px;
+    margin-right: 14px;
 }    
 .modal-btn{
     border:none;
