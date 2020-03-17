@@ -29,7 +29,7 @@ global $APPLICATION;
                 if (d.head) d.head.appendChild(s);
             })(document);
             cross.onclick = function(){
-                document.getElementById('search_popup').style.left = '100%';
+                document.getElementById('search_popup').style.left = '150%';
             }
             var search_a = document.getElementsByClassName('search')[0];
             search_a.onclick = function(){

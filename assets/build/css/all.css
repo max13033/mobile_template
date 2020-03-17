@@ -16045,7 +16045,7 @@ button:hover{
 }
 #search_popup{
 	position: absolute;
-    left: 100%;
+    left: 150%;
     display: flex;
     direction: row;
     justify-content: space-between;
