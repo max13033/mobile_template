@@ -128,12 +128,14 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
         <div class="col-12">
             <?if($arResult["NEW_USER_REGISTRATION"] == "Y"):?>
                 <noindex>
-                    <a
-                            class="modal-reg"
-                            href="<?=$arResult["AUTH_REGISTER_URL"]?>"
-                            rel="nofollow">
-                        <?=GetMessage("AUTH_REGISTER")?>
-                    </a>
+                    <div class = "modal-reg-div">
+                        <a
+                                class="modal-reg"
+                                href="<?=$arResult["AUTH_REGISTER_URL"]?>"
+                                rel="nofollow">
+                            <?=GetMessage("AUTH_REGISTER")?>
+                        </a>
+                    </div>    
                 </noindex>
             <?endif?>
         </div>

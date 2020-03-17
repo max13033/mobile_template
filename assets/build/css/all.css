@@ -16880,7 +16880,7 @@ button:hover{
     border-color:#0034C9;
     border-radius:6px;
     padding-left:5px;
-    margin-bottom:12px
+    margin-bottom:7px
 }    
 .modal-btn{
     border:none;
@@ -16896,6 +16896,9 @@ button:hover{
     right: 0;
     font-size:16px;
     width: 75px;
+}
+.modal-box{
+    position: relative;
 }
 .modal-box div{
 	display: inline-block;
@@ -16918,36 +16921,42 @@ button:hover{
     margin-bottom:0
 }
 .modal-pass{
+    position: absolute;
+    top: 0;
+    bottom: 0;    
     font-size:12px;
-    line-height:12px;
+    line-height:16px;
     vertical-align:middle;
     margin-bottom:0;
-    margin-left:auto;
-    color:#3c5eb3
-}
-.modal-pass:hover{
-    color:#3c5eb3
+    margin-left: 22px;
+    color:#567BE6;
+    margin-top: 10px;
 }
 .modal-enter-title{
     text-align:center;
-    font-size:18px
+    font-size:18px;
+    padding-top: 28px;
 }
 .modal-fb{
     text-align:center;
     opacity:.3;
     margin-bottom:38px
 }
-.modal-reg{
-    width:100%;
-    background-color:#027;
+.modal-reg-div{
+    width: 248px;
+    margin: auto;
+    text-align: center;
+    background-color: #027;
     color:#fff;
-    border-radius:10px;
-    padding:5px 0;
-    margin-bottom:15px
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-bottom:10px
 }
 .modal-p{
     text-align:center;
-    font-size:10px
+    font-size:10px;
+    line-height: 1.2;
+    margin-bottom: 0;
 }
 .popup{
     position:fixed;
