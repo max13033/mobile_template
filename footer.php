@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-    <!-- <div class="phone"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/vektorBL.png" alt="phone"></div> -->  <!--    телефонная трубка внизу (при разкомментировании поправить php тег открытия)   -->
+    <? /*<div class="phone"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/vektorBL.png" alt="phone"></div> */?>  <!--    телефонная трубка внизу   -->
     
 <!--     <div class="phone__window">
         <a href="#bx24_call" onclick="vallesMobile.openB24Chat()"  class="phone__item"><img src="< ?=SITE_TEMPLATE_PATH?>/assets/build/img/fu1.svg" alt="img">Обратная связь</a>
@@ -38,7 +38,8 @@
 </footer>
 
 <? if (!hasGooAgent()) {?>
-    <section class="popup">
+    <div class = "popup-background">    </div>      <!-- фон меню, при нажати на который меню скрывается -->
+    <section class="popup">     <!-- выплывающее меню -->
         <div class="container">
             <div>
                 <div>
@@ -69,112 +70,7 @@
                         "VIEW_MODE" => "LIST"
                     )
                 );?>
-                <?/*
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample10" role="button" aria-expanded="false" aria-controls="multiCollapseExample10">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/1.svg" alt=" icon">
-                        Стройка
-                    </a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample10">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample20" role="button" aria-expanded="false" aria-controls="multiCollapseExample20"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/22.svg" alt=" icon">Инженерные системы</a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample20">
-                    <div class="popup__link-wrap">
-                        <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample201" role="button" aria-expanded="false" aria-controls="multiCollapseExample201">Вентиляция и кондиционирование</a>
-                    </div>
-                    <div class="col-12 popup__3lvl collapse multi-collapse" id="multiCollapseExample201">
-                        <div class="popup__link-wrap"><a href="#" class="popup__link">Краны, вентили, гибкие подводки</a></div>
-                        <div class="popup__link-wrap"><a href="#" class="popup__link">Насосы</a></div>
-                        <div class="popup__link-wrap"><a href="#" class="popup__link">Трубы</a></div>
-                        <div class="popup__link-wrap"><a href="#" class="popup__link">Фильтры</a></div>
-                        <div class="popup__link-wrap"><a href="#" class="popup__link">Фитинги</a></div>
-                    </div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Водоотведение и дренажные системы</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Отопление</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Электроосвещение</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Электроснабжение</a></div>
-                </div>
-            </div>
-            <div class="col-12 ">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample30" role="button" aria-expanded="false" aria-controls="multiCollapseExample30"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/23.svg" alt=" icon">Отделка</a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample30">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample40" role="button" aria-expanded="false" aria-controls="multiCollapseExample40"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/11.svg" alt=" icon">Освещение</a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample40">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample50" role="button" aria-expanded="false" aria-controls="multiCollapseExample50"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/20.svg" alt=" icon">Мебель</a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample50">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample60" role="button" aria-expanded="false" aria-controls="multiCollapseExample60"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/9.svg" alt=" icon">Инуструмент</a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample60">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample70" role="button" aria-expanded="false" aria-controls="multiCollapseExample70"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/13.svg" alt=" icon">Спецодежда</a>
-                </div>
 
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample70">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample80" role="button" aria-expanded="false" aria-controls="multiCollapseExample80"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/24.svg" alt=" icon">Дача/сад</a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample80">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popup__link-wrap">
-                    <a class="popup__link" data-toggle="collapse" href="#multiCollapseExample90" role="button" aria-expanded="false" aria-controls="multiCollapseExample90"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/plus/21.svg" alt=" icon">Акции</a>
-                </div>
-                <div class="col-12 popup__2lvl collapse multi-collapse" id="multiCollapseExample90">
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом1</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом2</a></div>
-                    <div class="popup__link-wrap"><a href="#" class="popup__link">Дом3</a></div>
-                </div>
-            </div> */ ?>
             </div>
             <?
             $APPLICATION->IncludeComponent(
@@ -214,6 +110,7 @@
                 false
             );?>
         </div>
+        
         <div class="container">
             <div class="row">
                 <div class="col-12">
