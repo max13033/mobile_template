@@ -74,21 +74,23 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
 
         <div class="col-12 modal-box">
             <?if ($arResult["STORE_PASSWORD"] == "Y"):?>
-                <input type="checkbox" id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y">
-                <label for="USER_REMEMBER_frm"><?echo GetMessage("AUTH_REMEMBER_SHORT")?></label>
+                <input type="checkbox" id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y" style = "display: none;">
+                
+                <label for="USER_REMEMBER_frm"> 
+                    <div></div>   
+                    <?echo GetMessage("AUTH_REMEMBER_SHORT")?>
+                </label>
+
+                <noindex>
+                    <a
+                            class="modal-pass"
+                            href="<?=$arResult["AUTH_FORGOT_PASSWORD_URL"]?>"
+                            rel="nofollow">
+                                <?=GetMessage("AUTH_FORGOT_PASSWORD_2")?>
+                    </a>
+                </noindex>                
             <?endif?>
         </div>
-        <div class="col-6">
-            <noindex>
-                <a
-                        class="modal-pass"
-                        href="<?=$arResult["AUTH_FORGOT_PASSWORD_URL"]?>"
-                        rel="nofollow">
-                            <?=GetMessage("AUTH_FORGOT_PASSWORD_2")?>
-                </a>
-            </noindex>
-        </div>
-
     </form>
 
     <div class="row">

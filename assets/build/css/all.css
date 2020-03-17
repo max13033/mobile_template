@@ -16874,25 +16874,22 @@ button:hover{
     border-color:#0034C9;
     border-radius:6px;
     padding-left:5px;
-    margin-bottom:15px
+    margin-bottom:14px
 }
 .modal-form input[type=password]{
     border-color:#0034C9;
     border-radius:6px;
     padding-left:5px;
-    margin-bottom:13px
+    margin-bottom:12px
 }    
 .modal-btn{
-/*    width:100%;
-    margin:0;*/
     border:none;
     outline:0;
     border-radius:6px;
     background-color:#027;
     color:#fff;
     height: 30px;
-/*    line-height:36px;
-*/    font-size:16px;
+    font-size:16px;
     padding-left:10px;
     padding-right:10px;
     position: absolute;
@@ -16900,8 +16897,19 @@ button:hover{
     font-size:16px;
     width: 75px;
 }
-.modal-box input{
-    margin-right:10px
+.modal-box div{
+	display: inline-block;
+	position: relative;
+	top: 5px;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 2px solid #0034c9;
+}
+.modal-box input[type=checkbox]:checked + label >div{
+	background-color: #027;
 }
 .modal-box label{
     font-size:12px;
