@@ -34,8 +34,9 @@ global $APPLICATION;
             var search_a = document.getElementsByClassName('search')[0];
             search_a.onclick = function(){
                 document.getElementById('search_popup').style.left = '0'
-            }    
+            }   
         </script>
+        <!-- <scripr src = "< ?=SITE_TEMPLATE_PATH?>/assets/build/js/custom.js">   </scripr> -->
     <?} ?>
 </head>
 <body>
@@ -58,11 +59,12 @@ global $APPLICATION;
                     <div class="col-4 d-flex justify-content-start">
                         <a href="javascript:void(0);" class="icon-B"><span></span><span></span><span></span></a>
                         <a href="javascript:void(0);" class="search"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt=""></a>
+                        
                         <div id = "search_popup">    <!-- выплывающая панель поиска -->
-                            <div class = "search_button">
+                            <div class = "search_button search-input-div">
                                 <img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt="">
                             </div>
-                            <div>
+                            <div class = "search-input-div">
                                 <form>
                                     <input type = "text" placeholder="Ищу выгоду">
                                 </form>

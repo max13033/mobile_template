@@ -16067,11 +16067,9 @@ button:hover{
 }
 #search_popup input::-moz-placeholder { 
     color: #fff;
-    opacity: 0.5;
 }
 #search_popup input::-webkit-input-placeholder { 
     color: #fff;
-    opacity: 0.5;
 }
 #search_popup span{
     color: #fff;
