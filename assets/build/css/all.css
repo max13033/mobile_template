@@ -187,9 +187,6 @@
 .wiper-container-rtl .swiper-button-prev.swiper-button-black{
     background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E")
 }
-.swiper-button-lock{
-    display:none
-}
 .swiper-pagination{
     position:absolute;
     text-align:center;
@@ -362,9 +359,6 @@ button.swiper-pagination-bullet{
 }
 .swiper-pagination-progressbar.swiper-pagination-black{
     background:rgba(0,0,0,.25)
-}
-.swiper-pagination-lock{
-    display:none
 }
 .swiper-scrollbar{
     border-radius:10px;
@@ -1400,7 +1394,6 @@ button.swiper-pagination-bullet{
     background-color:rgba(255,255,255,.9);
     padding:5px 10px
 }
-
 @-webkit-keyframes spinner{
     0%{-webkit-transform:rotate(0);
                transform:rotate(0)
@@ -1409,7 +1402,6 @@ button.swiper-pagination-bullet{
                  transform:rotate(360deg)
     }
 }
-
 @keyframes spinner{
     0%{
     -webkit-transform:rotate(0);
@@ -1533,9 +1525,6 @@ button.swiper-pagination-bullet{
     z-index:20;
     opacity:0
 }
-.fotorama__wrap--css2 .fotorama__video-close{
-    display:none
-}
 .fotorama__wrap--css3 .fotorama__video-close{
     -webkit-transform:translate3d(32px,-32px,0);
     transform:translate3d(32px,-32px,0)
@@ -1559,10 +1548,6 @@ button.swiper-pagination-bullet{
 .fotorama__wrap--video .fotorama__arr,
 .otorama__wrap--video .fotorama__fullscreen-icon{
     opacity:0!important
-}
-.fotorama__wrap--css2.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr,
-.otorama__wrap--css2.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon{
-    display:none
 }
 .fotorama__wrap--css2.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr:focus,
 .otorama__wrap--css2.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon:focus{
@@ -1650,20 +1635,48 @@ button.swiper-pagination-bullet{
 .otorama__wrap--no-shadows .fotorama__nav:after,
 .otorama__wrap--no-shadows .fotorama__nav:before,
 .otorama__wrap--no-shadows .fotorama__stage:after,
-.otorama__wrap--no-shadows .fotorama__stage:before{
+.otorama__wrap--no-shadows .fotorama__stage:before,
+.datepicker-inline .datepicker--pointer,
+.-only-timepicker- .datepicker--content,
+.datepicker--body,
+.-only-timepicker- .datepicker--nav,
+template,
+.collapse,
+.dropleft .dropdown-toggle::after,
+.tab-content>.tab-pane,
+.navbar-expand .navbar-toggler,
+.badge:empty,
+.popover-header:empty,
+.noUi-handle:after,
+.oUi-handle:before,
+.datepicker.dropdown-menu:before,
+.button-dropdown .dropdown-toggle:after,
+.popover:before,
+.clear-filter:after,
+.lear-filter:before,
+.sidebar-collapse .navbar .dropdown .dropdown-menu:before,
+.idebar-collapse .navbar .dropdown.show .dropdown-menu:before,
+.sidebar-collapse .navbar .dropdown .dropdown-menu,
+.bootstrap-collapse .navbar .dropdown .dropdown-menu:before,
+.ootstrap-collapse .navbar .dropdown.show .dropdown-menu:before,
+.bootstrap-collapse .navbar .dropdown .dropdown-menu,
+.button-dropdown,
+.swiper-button-lock,
+.swiper-pagination-lock,
+.fotorama__wrap--css2.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr,
+.otorama__wrap--css2.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon,
+.fotorama__wrap--css2 .fotorama__video-close{
     display:none
 }
 .datepicker--cell-day.-other-month-,
-.atepicker--cell-year.-other-decade-{
+.atepicker--cell-year.-other-decade-,
+.-disabled-.-focus-.datepicker--cell-day.-other-month-,
+.disabled-.-focus-.datepicker--cell-year.-other-decade-{
     color:#dedede
 }
 .datepicker--cell-day.-other-month-:hover,
 .atepicker--cell-year.-other-decade-:hover{
     color:#c5c5c5
-}
-.-disabled-.-focus-.datepicker--cell-day.-other-month-,
-.disabled-.-focus-.datepicker--cell-year.-other-decade-{
-    color:#dedede
 }
 .-selected-.datepicker--cell-day.-other-month-,
 .selected-.datepicker--cell-year.-other-decade-{
@@ -1737,14 +1750,12 @@ button.swiper-pagination-bullet{
     cursor:default;
     color:#aeaeae
 }
-.datepicker--cell.-disabled-.-focus-{
+.datepicker--cell.-disabled-.-focus-,
+.datepicker--cell.-disabled-.-current-.-focus-{
     color:#aeaeae
 }
 .datepicker--cell.-disabled-.-in-range-{
     color:#a1a1a1
-}
-.datepicker--cell.-disabled-.-current-.-focus-{
-    color:#aeaeae
 }
 .datepicker--cell.-range-from-{
     border:1px solid rgba(92,196,239,.5);
@@ -1804,34 +1815,28 @@ button.swiper-pagination-bullet{
 .datepicker--cell-day{
     width:14.28571%
 }
-.datepicker--cells-months{
+.datepicker--cells-months,
+.datepicker--cells-years,
+.datepicker--years{
     height:170px
 }
 .datepicker--cell-month{
     width:33.33%;
     height:25%
 }
-.datepicker--years{
-    height:170px
-}
-.datepicker--cells-years{
-    height:170px
-}
 .datepicker--cell-year{
     width:25%;
     height:33.33%
 }
 .datepicker--cell-day.-other-month-,
-.atepicker--cell-year.-other-decade-{
+.atepicker--cell-year.-other-decade-,
+.-disabled-.-focus-.datepicker--cell-day.-other-month-,
+.disabled-.-focus-.datepicker--cell-year.-other-decade-{
     color:#dedede
 }
 .datepicker--cell-day.-other-month-:hover,
 .atepicker--cell-year.-other-decade-:hover{
     color:#c5c5c5
-}
-.-disabled-.-focus-.datepicker--cell-day.-other-month-,
-.disabled-.-focus-.datepicker--cell-year.-other-decade-{
-    color:#dedede
 }
 .-selected-.datepicker--cell-day.-other-month-,
 .selected-.datepicker--cell-year.-other-decade-{
@@ -1919,15 +1924,9 @@ button.swiper-pagination-bullet{
     -webkit-transform:none;
     transform:none
 }
-.datepicker-inline .datepicker--pointer{
-    display:none
-}
 .datepicker--content{
     box-sizing:content-box;
     padding:4px
-}
-.-only-timepicker- .datepicker--content{
-    display:none
 }
 .datepicker--pointer{
     position:absolute;
@@ -1990,9 +1989,6 @@ button.swiper-pagination-bullet{
 .right-center- .datepicker--pointer{
     top:calc(50% - 10px / 2)
 }
-.datepicker--body{
-    display:none
-}
 .datepicker--body.active{
     display:block
 }
@@ -2041,9 +2037,6 @@ button.swiper-pagination-bullet{
     border-bottom:1px solid #efefef;
     min-height:32px;
     padding:4px
-}
-.-only-timepicker- .datepicker--nav{
-    display:none
 }
 .datepicker--nav-action,
 .atepicker--nav-title{
@@ -2722,9 +2715,6 @@ output{
 summary{
     display:list-item;
     cursor:pointer
-}
-template{
-    display:none
 }
 [hidden]{
     display:none!important
@@ -4992,9 +4982,6 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 .fade.show{
     opacity:1
 }
-.collapse{
-    display:none
-}
 .collapse.show{
     display:block
 }
@@ -5099,9 +5086,6 @@ tbody.collapse.show{
     margin-left:.255em;
     vertical-align:.255em;
     content:""
-}
-.dropleft .dropdown-toggle::after{
-    display:none
 }
 .dropleft .dropdown-toggle::before{
     display:inline-block;
@@ -5653,9 +5637,6 @@ tbody.collapse.show{
     flex-grow:1;
     text-align:center
 }
-.tab-content>.tab-pane{
-    display:none
-}
 .tab-content>.active{
     display:block
 }
@@ -5944,9 +5925,6 @@ tbody.collapse.show{
 .navbar-expand .navbar-collapse{
     display:flex!important;
     flex-basis:auto
-}
-.navbar-expand .navbar-toggler{
-    display:none
 }
 .navbar-expand .dropup .dropdown-menu{
     top:auto;
@@ -6343,9 +6321,6 @@ tbody.collapse.show{
     white-space:nowrap;
     vertical-align:baseline;
     border-radius:0
-}
-.badge:empty{
-    display:none
 }
 .btn .badge{
     position:relative;
@@ -7210,9 +7185,6 @@ button.close{
     border-bottom:1px solid #ebebeb;
     border-top-left-radius:calc(.3rem - 1px);
     border-top-right-radius:calc(.3rem - 1px)
-}
-.popover-header:empty{
-    display:none
 }
 .popover-body{
     padding:.5rem .75rem;
@@ -10163,10 +10135,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle{
     -o-transform:scale3d(1.5,1.5,1);
     transform:scale3d(1.5,1.5,1)
 }
-.noUi-handle:after,
-.oUi-handle:before{
-    display:none
-}
 .noUi-handle:after{
     left:17px
 }
@@ -10367,9 +10335,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle{
     display:block;
     width:254px;
     max-width:254px
-}
-.datepicker.dropdown-menu:before{
-    display:none
 }
 .datepicker.datepicker-primary{
     background-color:#f96332
@@ -13837,9 +13802,6 @@ body{
     padding-bottom:.5rem;
     display:block
 }
-.button-dropdown .dropdown-toggle:after{
-    display:none
-}
 .alert{
     border:0;
     border-radius:0;
@@ -13925,9 +13887,6 @@ img{
     margin-top:5px;
     border:none;
     background-color:transparent
-}
-.popover:before{
-    display:none
 }
 .popover.bs-tether-element-attached-top:after{
     border-bottom-color:#fff;
@@ -14767,10 +14726,6 @@ img{
     top:0;
     content:""
 }
-.clear-filter:after,
-.lear-filter:before{
-    display:none
-}
 .clear-filter[filter-color=orange]{
     background:rgba(44,44,44,.2);
     background:-webkit-linear-gradient(90deg,rgba(44,44,44,.2),rgba(224,23,3,.6));
@@ -15147,15 +15102,8 @@ img{
     height:125px;
     overflow-y:scroll
 }
-.sidebar-collapse .navbar .dropdown .dropdown-menu:before,
-.idebar-collapse .navbar .dropdown.show .dropdown-menu:before{
-    display:none
-}
 .sidebar-collapse .navbar .dropdown .dropdown-item{
     padding-left:2.5rem
-}
-.sidebar-collapse .navbar .dropdown .dropdown-menu{
-    display:none
 }
 .sidebar-collapse .navbar .dropdown.show .dropdown-menu{
     display:block
@@ -15345,15 +15293,8 @@ img{
     height:125px;
     overflow-y:scroll
 }
-.bootstrap-collapse .navbar .dropdown .dropdown-menu:before,
-.ootstrap-collapse .navbar .dropdown.show .dropdown-menu:before{
-    display:none
-}
 .bootstrap-collapse .navbar .dropdown .dropdown-item{
     padding-left:2.5rem
-}
-.bootstrap-collapse .navbar .dropdown .dropdown-menu{
-    display:none
 }
 .bootstrap-collapse .navbar .dropdown.show .dropdown-menu{
     display:block
@@ -15427,9 +15368,6 @@ img{
 }
 .profile-photo .profile-photo-small{
     margin-left:-2px
-}
-.button-dropdown{
-    display:none
 }
 .section-nucleo-icons .container .row>[class*=col-]:first-child{
     text-align:center
