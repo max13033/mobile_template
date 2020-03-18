@@ -1,0 +1,39 @@
+@media (max-width:768px){
+    .parallax .parallax-image{
+        width:100%;
+        height:640px;
+        overflow:hidden
+    }
+    .parallax .parallax-image img{
+        height:100%;
+        width:auto
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

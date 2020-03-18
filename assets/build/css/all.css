@@ -772,19 +772,6 @@ button.swiper-pagination-bullet{
 .parallax .parallax-image img{
     width:100%
 }
-
-@media (max-width:768px){
-    .parallax .parallax-image{
-        width:100%;
-        height:640px;
-        overflow:hidden
-    }
-    .parallax .parallax-image img{
-        height:100%;
-        width:auto
-    }
-
-}
 .social-buttons-demo .btn{
     margin-right:5px;
     margin-bottom:7px
@@ -810,27 +797,6 @@ button.swiper-pagination-bullet{
     .lightbox .modal-dialog{
         width:960px
     }
-}
-
-@media (max-width:991px){
-    .fixed-section.affix{
-        position:relative;
-        margin-bottom:100px
-    }
-}
-
-@media (max-width:768px){
-    .btn,
-    .tn-morphing{
-        margin-bottom:10px
-    }
-    .parallax .motto{
-        top:170px;
-        margin-top:0;
-        font-size:60px;
-        width:270px
-    }
-
 }
 .logo-container .brand,
 .ogo-container .logo,
@@ -3903,57 +3869,8 @@ pre code{
 .table-dark.table-hover tbody tr:hover{
     background-color:rgba(255,255,255,.075)
 }
-
-@media (max-width:575.98px){
-    .table-responsive-sm{
-        display:block;
-        width:100%;
-        overflow-x:auto;
-        -webkit-overflow-scrolling:touch;
-        -ms-overflow-style:-ms-autohiding-scrollbar
-    }
-    .table-responsive-sm>.table-bordered{
-        border:0
-    }
-}
-
-@media (max-width:767.98px){
-    .table-responsive-md{
-        display:block;
-        width:100%;
-        overflow-x:auto;
-        -webkit-overflow-scrolling:touch;
-        -ms-overflow-style:-ms-autohiding-scrollbar
-    }
-    .table-responsive-md>.table-bordered{
-        border:0
-    }
-}
-
-@media (max-width:991.98px){
-    .table-responsive-lg{
-        display:block;
-        width:100%;
-        overflow-x:auto;
-        -webkit-overflow-scrolling:touch;
-        -ms-overflow-style:-ms-autohiding-scrollbar
-    }
-    .table-responsive-lg>.table-bordered{
-        border:0
-    }
-}
-
 @media (max-width:1199.98px){
-    .table-responsive-xl{
-        display:block;
-        width:100%;
-        overflow-x:auto;
-        -webkit-overflow-scrolling:touch;
-        -ms-overflow-style:-ms-autohiding-scrollbar
-    }
-    .table-responsive-xl>.table-bordered{
-        border:0
-    }
+
 
 }
 .table-responsive{
@@ -5719,11 +5636,7 @@ tbody.collapse.show{
 }
 
 @media (max-width:575.98px){
-    .navbar-expand-sm>.container,
-    .avbar-expand-sm>.container-fluid{
-        padding-right:0;
-        padding-left:0
-    }
+
 
 }
 
@@ -5762,15 +5675,6 @@ tbody.collapse.show{
         bottom:100%
     }
 }
-
-@media (max-width:767.98px){
-    .navbar-expand-md>.container,
-    .avbar-expand-md>.container-fluid{
-        padding-right:0;
-        padding-left:0
-    }
-}
-
 @media (min-width:768px){
     .navbar-expand-md{
         flex-flow:row nowrap;
@@ -5807,15 +5711,6 @@ tbody.collapse.show{
     }
 
 }
-
-@media (max-width:991.98px){
-    .navbar-expand-lg>.container,
-    .avbar-expand-lg>.container-fluid{
-        padding-right:0;
-        padding-left:0
-    }
-}
-
 @media (min-width:992px){
     .navbar-expand-lg{
         flex-flow:row nowrap;
@@ -5851,15 +5746,6 @@ tbody.collapse.show{
         bottom:100%
     }
 }
-
-@media (max-width:1199.98px){
-    .navbar-expand-xl>.container,
-    .avbar-expand-xl>.container-fluid{
-        padding-right:0;
-        padding-left:0
-    }
-}
-
 @media (min-width:1200px){
     .navbar-expand-xl{
         flex-flow:row nowrap;
@@ -17058,22 +16944,11 @@ button:hover{
 /*.b-mobile-menu__title.b-mobile-menu__item{		=Max= не нашел тег .b-mobile-menu__title
     font-size:18px
 }*/
+.advantages>div,
+.product>div,
+.solution>div,
+.action>div,
 .offer>div{
-    width:100%
-}
-.offer>div{
-    width:100%
-}
-.action>div{
-    width:100%
-}
-.solution>div{
-    width:100%
-}
-.product>div{
-    width:100%
-}
-.advantages>div{
     width:100%
 }
 html{
@@ -17108,4 +16983,100 @@ html{
 }
 .s6 .swiper-slide{
     width: 213px;
+}
+
+@media (max-width:768px){
+    .parallax .parallax-image{
+        width:100%;
+        height:640px;
+        overflow:hidden
+    }
+    .parallax .parallax-image img{
+        height:100%;
+        width:auto
+    }
+    .btn,
+    .tn-morphing{
+        margin-bottom:10px
+    }
+    .parallax .motto{
+        top:170px;
+        margin-top:0;
+        font-size:60px;
+        width:270px
+    }
+}
+@media (max-width:575.98px){
+    .table-responsive-sm{
+        display:block;
+        width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+        -ms-overflow-style:-ms-autohiding-scrollbar
+    }
+    .table-responsive-sm>.table-bordered{
+        border:0
+    }
+    .navbar-expand-sm>.container,
+    .avbar-expand-sm>.container-fluid{
+        padding-right:0;
+        padding-left:0
+    }    
+}
+@media (max-width:767.98px){
+    .navbar-expand-md>.container,
+    .avbar-expand-md>.container-fluid{
+        padding-right:0;
+        padding-left:0
+    }
+    .table-responsive-md{
+        display:block;
+        width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+        -ms-overflow-style:-ms-autohiding-scrollbar
+    }
+    .table-responsive-md>.table-bordered{
+        border:0
+    }    
+}
+@media (max-width:991px){
+    .fixed-section.affix{
+        position:relative;
+        margin-bottom:100px
+    }
+}
+@media (max-width:991.98px){
+    .navbar-expand-lg>.container,
+    .avbar-expand-lg>.container-fluid{
+        padding-right:0;
+        padding-left:0
+    }
+    .table-responsive-lg{
+        display:block;
+        width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+        -ms-overflow-style:-ms-autohiding-scrollbar
+    }
+    .table-responsive-lg>.table-bordered{
+        border:0
+    }    
+}
+@media (max-width:1199.98px){
+    .navbar-expand-xl>.container,
+    .avbar-expand-xl>.container-fluid{
+        padding-right:0;
+        padding-left:0
+    }
+    .table-responsive-xl{
+        display:block;
+        width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+        -ms-overflow-style:-ms-autohiding-scrollbar
+    }
+    .table-responsive-xl>.table-bordered{
+        border:0
+    }    
 }
