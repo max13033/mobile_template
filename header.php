@@ -70,7 +70,7 @@ global $APPLICATION;
                                 </form>
                             </div>
                             <div id = "cross">
-                                <span> &#10006; </span>
+                                <span> &#215; </span>
                             </div>    
                         </div>
                     </div>
