@@ -40,7 +40,7 @@ var vallesMobile = {
 
 
 
-
+//      Код ниже вставлен для работы multisearch из файла  aspro_next_s1_custom/js/main.js
 
 var basketTimeoutSlide;
 var resizeEventTimer;
