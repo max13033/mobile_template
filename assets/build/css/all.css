@@ -3869,10 +3869,6 @@ pre code{
 .table-dark.table-hover tbody tr:hover{
     background-color:rgba(255,255,255,.075)
 }
-@media (max-width:1199.98px){
-
-
-}
 .table-responsive{
     display:block;
     width:100%;
@@ -5634,12 +5630,6 @@ tbody.collapse.show{
     background:no-repeat center center;
     background-size:100% 100%
 }
-
-@media (max-width:575.98px){
-
-
-}
-
 @media (min-width:576px){
     .navbar-expand-sm{
         flex-flow:row nowrap;
