@@ -15887,7 +15887,7 @@ button:hover{
     position: relative;
     padding: 4px 0;
     background-color: #027;
-    z-index:9999;
+    z-index:99;
 }
 .header-menu-active{
     position:fixed;
@@ -16772,7 +16772,7 @@ button:hover{
     padding-bottom:15px;
     margin-bottom:3px;
     background-color:#027;
-    z-index:999;
+    z-index:98;
     width:320px;
     transform:translateX(-100%);
     transition:ease-in-out .3s
