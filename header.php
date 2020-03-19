@@ -79,7 +79,7 @@ global $APPLICATION;
                     </div>
                     <div class="col-4 d-flex justify-content-end">
                         <button class="person" data-toggle="modal" data-target="#exampleModal"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/PersonHeader.svg" alt="User"></button>
-                        <a href="javascript:void(0);" class="cart"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/CartHeader.svg" alt="cart"></a>
+                        <a href="/basket" class="cart"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/CartHeader.svg" alt="cart"></a>
                     </div>
                 </div>
             </div>
