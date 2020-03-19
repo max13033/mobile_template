@@ -195,7 +195,8 @@
     transition:.3s opacity;
     -webkit-transform:translate3d(0,0,0);
     transform:translate3d(0,0,0);
-    z-index:10
+    z-index:10;
+    bottom:65px
 }
 .swiper-pagination.swiper-pagination-hidden{
     opacity:0
@@ -16037,10 +16038,6 @@ button:hover{
 }
 .swiper-container-horizontal>.swiper-pagination-bullets{
     bottom:-25px
-}
-.swiper-pagination{
-    z-index:100;
-    bottom:65px
 }
 .swiper-pagination-bullet{
     width:6px;
