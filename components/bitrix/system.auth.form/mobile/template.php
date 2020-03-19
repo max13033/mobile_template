@@ -77,7 +77,9 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
                 <input type="checkbox" id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y" style = "display: none;">
                 
                 <label for="USER_REMEMBER_frm"> 
-                    <div></div>   
+                    <div>
+                        <img src = "<?=SITE_TEMPLATE_PATH?>/assets/build/img/arrowB.png" >
+                    </div>   
                     <?echo GetMessage("AUTH_REMEMBER_SHORT")?>
                 </label>
 

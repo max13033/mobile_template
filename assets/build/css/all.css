@@ -16708,9 +16708,14 @@ button:hover{
     background-color: #fff;
     border: 2px solid #0034c9;
 }
-.modal-box input[type=checkbox]:checked + label >div{
-	background-color: #027;
+.modal-box input[type=checkbox] + label > div img{
+    display: none;
 }
+.modal-box input[type=checkbox]:checked + label > div img{
+    display: block;
+    margin-top: 5px;
+    margin-left: 3px;
+}    
 .modal-box label{
     font-size:12px;
     line-height:12px;
