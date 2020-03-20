@@ -37,6 +37,7 @@
                         0 => "UF_POPULAR",
                         1 => "UF_VIEW_MOBILE_CAT",
                         2 => "UF_CATALOG_MOB_ICON",
+                        // 3 => ""
                         3 => "UF_MOBILE_MENU_NAME",
                     ),
                     "SHOW_PARENT_NAME" => "Y",

@@ -20,7 +20,8 @@ $this->setFrameMode(true);
     ?>
     <div class="col-12">
         <a href="javascript:void(0);" class="catalog__link">
-            <img src="<?=$img?>" alt="<?=$SECTION['UF_MOBILE_MENU_NAME']?>"><?=$SECTION['UF_MOBILE_MENU_NAME']?>
+            <?  /*  <img src="<?=$img?>" alt="<?=$SECTION['NAME']?>"><?=$SECTION['~NAME']?> */  ?>
+            <img src="<?=$img?>" alt="<?=$SECTION['NAME']?>">  <?=$SECTION['UF_MOBILE_MENU_NAME']?$SECTION['UF_MOBILE_MENU_NAME']:$SECTION['~NAME']?>    
         </a>
     </div>
 <?}?>
