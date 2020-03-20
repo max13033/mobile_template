@@ -19,7 +19,7 @@ $this->setFrameMode(true);
     $img = isset($SECTION['UF_CATALOG_MOB_ICON']) ? CFile::GetPath($SECTION['UF_CATALOG_MOB_ICON']) : SITE_TEMPLATE_PATH . '/assets/build/img/plus/1.svg' ;
     ?>
     <div class="col-12">
-        <a href="javascript:void(0);" class="catalog__link">
+        <a href="<?=$SECTION['SECTION_PAGE_URL']?>" class = "catalog__link">
             <?  /*  <img src="<?=$img?>" alt="<?=$SECTION['NAME']?>"><?=$SECTION['~NAME']?> */  ?>
             <img src="<?=$img?>" alt="<?=$SECTION['NAME']?>">  <?=$SECTION['UF_MOBILE_MENU_NAME']?$SECTION['UF_MOBILE_MENU_NAME']:$SECTION['~NAME']?>    
         </a>
