@@ -35,7 +35,9 @@
                 <div class="swiper-slide">
                     <a href="<?=$link?>" class="offer__link-wrap" <?=(strlen($target) ? 'target="'.$target.'"' : '')?>>
                         <img src="<?=$background?>" alt="Slide" class="offer__img">
-                        <div class="offer__vektor"></div>
+                        <? if ($label || $title) {?>
+                            <div class="offer__vektor"></div>
+                        <?} ?>    
                         <div class="offer__items">
                             <? if ($label) {?>
                                 <span class="offer__items--title"><?=$label?></span>
