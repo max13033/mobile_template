@@ -141,16 +141,17 @@
                 </div>
                 <div class="modal-body">
                     <?$APPLICATION->IncludeComponent(
-                        "bitrix:system.auth.form",
-                        "mobile",
-                        Array(
-                            "COMPOSITE_FRAME_MODE" => "A",
-                            "COMPOSITE_FRAME_TYPE" => "AUTO",
-                            "FORGOT_PASSWORD_URL" => "/auth/forgot-password/",
-                            "PROFILE_URL" => "/personal/",
-                            "REGISTER_URL" => "/auth/registration/",
-                            "SHOW_ERRORS" => "N"
-                        )
+                        "bitrix:socserv.auth.form",
+                        "icons_inline",
+                        array(
+                            "AUTH_SERVICES" => $arResult["AUTH_SERVICES"],
+                            "AUTH_URL" => $arResult["AUTH_URL"],
+                            "POST" => $arResult["POST"],
+                            "POPUP" => "N",
+                            "SUFFIX" => "form_inline",
+                        ),
+                        $component,
+                        array( "HIDE_ICONS" => "N" )
                     );?>
                 </div>
             </div>

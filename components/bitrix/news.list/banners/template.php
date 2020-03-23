@@ -22,10 +22,10 @@ $this->setFrameMode(true);
             <div class="swiper-slide">
                 <a href="<?=$arItem['PROPERTIES']['LINK']['VALUE']?>" class="advantages__slide-link">
                     <img src="<?=$picture?>" alt="Slide" class="advantages__img">
-                    <div class="advantages__vektor"></div>
-                    <div class="advantages__items">
+                    <!-- <div class="advantages__vektor"></div> -->             <!-- белый фон  -->
+                <?  /*  <div class="advantages__items">     название слайдера внутри белого фона
                         <span class="advantages__items--title"><?=$name?></span>
-                    </div>
+                    </div>  */  ?>
                 </a>
             </div>
         <?endforeach;?>
