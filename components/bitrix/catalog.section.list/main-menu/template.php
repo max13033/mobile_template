@@ -61,7 +61,7 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
                         class="b-mobile-menu__item b-mobile-menu__item-open"
                         href="<? echo $arSection["SECTION_PAGE_URL"]; ?>">
                         <?if ($arSection['RELATIVE_DEPTH_LEVEL'] === 1){
-                            $image = intval($arSection['UF_CATALOG_ICON']) > 0 ? CFile::GetPath($arSection['UF_CATALOG_ICON']) : SITE_TEMPLATE_PATH . '/assets/build/img/plus/1.svg'
+                            $image = intval($arSection['UF_CATALOG_MOB_ICON']) > 0 ? CFile::GetPath($arSection['UF_CATALOG_MOB_ICON']) : SITE_TEMPLATE_PATH . '/assets/build/img/plus/1.svg'
                             ?>
                             <img data-src="<?=$image?>" class="b-mobile--icons">
                         <?}?>

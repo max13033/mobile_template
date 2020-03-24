@@ -64,7 +64,7 @@
                         "SECTION_FIELDS" => array("", ""),
                         "SECTION_ID" => "",
                         "SECTION_URL" => "",
-                        "SECTION_USER_FIELDS" => array("UF_CATALOG_ICON", ""),
+                        "SECTION_USER_FIELDS" => array("UF_CATALOG_MOB_ICON", ""),
                         "SHOW_PARENT_NAME" => "Y",
                         "TOP_DEPTH" => "4",
                         "VIEW_MODE" => "LIST"

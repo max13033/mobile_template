@@ -17,7 +17,7 @@ $this->setFrameMode(true);
 <div class="swiper-container s2">
     <div class="swiper-wrapper">
         <? foreach ($arResult['SECTIONS'] as $SECTION) {
-            $img = isset($SECTION['UF_ICON_POPULAR']) ? CFile::GetPath($SECTION['UF_ICON_POPULAR']) : SITE_TEMPLATE_PATH . '/assets/build/img/po9.svg' ;
+            $img = isset($SECTION['UF_CATALOG_MOB_ICON']) ? CFile::GetPath($SECTION['UF_CATALOG_MOB_ICON']) : SITE_TEMPLATE_PATH . '/assets/build/img/po9.svg' ;
             ?>
             <div class="swiper-slide">
                 <a href="<?=$SECTION['SECTION_PAGE_URL']?>" class="popular__link-wrap">

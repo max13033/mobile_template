@@ -113,7 +113,7 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
 
         <?if($arResult["AUTH_SERVICES"]):?>
             <?
-            $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "",
+            $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "popup",
                 array(
                     "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
                     "AUTH_URL"=>$arResult["AUTH_URL"],
