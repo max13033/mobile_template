@@ -18,6 +18,10 @@ $this->setFrameMode(true);
         <?foreach($arResult["ITEMS"] as $arItem):
             $name = $arItem['~NAME'];
             $picture = $arItem['PREVIEW_PICTURE']['SRC'];
+            
+            if (!empty($arItem["PROPERTIES"]["PICTURE_SVG"]['VALUE'])) {    //  если в свойствах есть SVG картинка - отображать её вместо JPG
+                $picture = CFile::GetPath($arItem["PROPERTIES"]["PICTURE_SVG"]['VALUE']);
+            }            
             ?>
             <div class="swiper-slide">
                 <a href="<?=$arItem['PROPERTIES']['LINK']['VALUE']?>" class="advantages__slide-link">
