@@ -179,7 +179,7 @@
         //         //document.querySelectorAll('.b24-widget-button-inner-item').click()
         //     })
 
-        // }, 10000)
+        // }, 2000)
     </script>
 
 <?} ?>
