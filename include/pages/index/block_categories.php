@@ -34,7 +34,7 @@
             "SECTION_URL" => "",
             "SECTION_USER_FIELDS" => array(
                 0 => "UF_POPULAR",
-                1 => "UF_CATALOG_MOB_ICON",
+                1 => "UF_ICON_POPULAR",
                 2 => "UF_POPULAR_CATEGORY",
                 3 => "",
             ),
