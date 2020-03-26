@@ -15892,7 +15892,6 @@ button:hover{
 }
 .header-menu-active{
     position:fixed;
-    background-color:#027;
     max-width:700px;
     width: 100%;
 }

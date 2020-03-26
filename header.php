@@ -85,5 +85,40 @@ global $APPLICATION;
             </div>
         </div>
     </header>
-    
+
+
+    <? /*<header>
+        <div class="topdesk container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="topdesk__title"><? area('header_title') ?></h3>
+                    <p class="topdesk__text"><? area('header_subtitle') ?></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-menu container">
+            <div class="row d-flex align-items-end">
+                <div class="col-4 d-flex justify-content-start">
+                    <a href="javascript:void(0);" class="icon-B"><span></span><span></span><span></span></a>
+                    <a href="javascript:void(0);" class="icon-search"></a>
+                </div>
+                <div class="">
+                    <? area('header_logo') ?>
+                </div> 
+                <div class="col-4 d-flex justify-content-end">
+                    <?if ($USER->IsAuthorized()) {?>
+                        <a href="/personal/">
+                            <div class="icon-person"></div>
+                        </a>
+                    <?}else{?>
+                        <div class="icon-person">
+                            <button data-toggle="modal" data-target="#exampleModal"></button>
+                        </div>
+                    <?}?>
+                    <a href="/basket/" class="icon-cart"></a>
+                </div>
+            </div>
+        </div>
+    </header> */ ?>
     <main>
