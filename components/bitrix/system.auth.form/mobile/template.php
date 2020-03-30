@@ -97,7 +97,9 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
 
     <div class="row">
 
-        <?if($arResult["AUTH_SERVICES"]):?>
+        <!-- Временно закоментировал аторизацию через соцсети -->
+
+        <?/*if($arResult["AUTH_SERVICES"]):?>
             <p class="modal-enter-title col-12"><?=GetMessage("socserv_as_user_form")?></p>
             <?
             $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "icons",
@@ -125,8 +127,8 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
                 array("HIDE_ICONS"=>"Y")
             );
             ?>
-        <?endif?>
-
+        <?endif*/?>
+        <br><br>
         <div class="col-12">
             <?if($arResult["NEW_USER_REGISTRATION"] == "Y"):?>
                 <noindex>

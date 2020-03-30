@@ -35,7 +35,7 @@ $this->setFrameMode(true);
                     <p class="product__cost">
                         <?=$item['PRICES']['BASE']['PRINT_DISCOUNT_VALUE']?>
                         <?if($item['PRICES']['BASE']['DISCOUNT_VALUE']){?>
-                            <span><?=$item['PRICES']['BASE']['PRINT_VALUE']?></span>
+                            <span><?//=$item['PRICES']['BASE']['PRINT_VALUE']?></span>   <!--  Временно закомментировал до выяснения -->
                         <?}?>
                     </p>
                 </a>

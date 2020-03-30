@@ -64,7 +64,7 @@
                         "SECTION_FIELDS" => array("", ""),
                         "SECTION_ID" => "",
                         "SECTION_URL" => "",
-                        "SECTION_USER_FIELDS" => array("UF_CATALOG_ICON", ""),
+                        "SECTION_USER_FIELDS" => array("UF_CATALOG_MOB_ICON", ""),
                         "SHOW_PARENT_NAME" => "Y",
                         "TOP_DEPTH" => "4",
                         "VIEW_MODE" => "LIST"
@@ -141,17 +141,16 @@
                 </div>
                 <div class="modal-body">
                     <?$APPLICATION->IncludeComponent(
-                        "bitrix:socserv.auth.form",
-                        "icons_inline",
-                        array(
-                            "AUTH_SERVICES" => $arResult["AUTH_SERVICES"],
-                            "AUTH_URL" => $arResult["AUTH_URL"],
-                            "POST" => $arResult["POST"],
-                            "POPUP" => "N",
-                            "SUFFIX" => "form_inline",
-                        ),
-                        $component,
-                        array( "HIDE_ICONS" => "N" )
+                        "bitrix:system.auth.form",
+                        "mobile",
+                        Array(
+                            "COMPOSITE_FRAME_MODE" => "A",
+                            "COMPOSITE_FRAME_TYPE" => "AUTO",
+                            "FORGOT_PASSWORD_URL" => "/auth/forgot-password/",
+                            "PROFILE_URL" => "/personal/",
+                            "REGISTER_URL" => "/auth/registration/",
+                            "SHOW_ERRORS" => "N"
+                        )
                     );?>
                 </div>
             </div>
@@ -167,20 +166,20 @@
             var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         })(window,document,'https://cdn.bitrix24.ru/b7746147/crm/site_button/loader_2_bvixlm.js');
 
-        setTimeout(function () {
-            vallesMobile.renderB25WhatsApp()
+        // setTimeout(function () {
+        //     vallesMobile.renderB25WhatsApp()
 
-            $('.b24-widget-button-block, .b24-widget-button-inner-mask').hide()
-            $('.bx-livechat-control-btn-close').css('background', 'red')
-            $(document).on('click', '.bx-livechat-control-btn-close', function () {
-                alert()
-            })
-            $('.bx-livechat-control-box').click(function () {
-                alert()
-                //document.querySelectorAll('.b24-widget-button-inner-item').click()
-            })
+        //     $('.b24-widget-button-block, .b24-widget-button-inner-mask').hide()
+        //     $('.bx-livechat-control-btn-close').css('background', 'red')
+        //     $(document).on('click', '.bx-livechat-control-btn-close', function () {
+        //         alert()
+        //     })
+        //     $('.bx-livechat-control-box').click(function () {
+        //         alert()
+        //         //document.querySelectorAll('.b24-widget-button-inner-item').click()
+        //     })
 
-        }, 2000)
+        // }, 2000)
     </script>
 
 <?} ?>
