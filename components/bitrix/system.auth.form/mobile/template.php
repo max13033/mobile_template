@@ -52,7 +52,7 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
             <input type="password"
                    name="USER_PASSWORD"
                    maxlength="200"
-                   size="15"
+                   size="13"
                    autocomplete="off"
                    placeholder="<?=GetMessage("AUTH_PASSWORD")?>">
 
@@ -96,39 +96,23 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
     </form>
 
     <div class="row">
-
-        <!-- Временно закоментировал аторизацию через соцсети -->
-
-        <?/*if($arResult["AUTH_SERVICES"]):?>
+        <!-- Авторизация через соцсети -->
+        <?
+        if($arResult["AUTH_SERVICES"]):?>
             <p class="modal-enter-title col-12"><?=GetMessage("socserv_as_user_form")?></p>
             <?
-            $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "icons",
+            $APPLICATION->IncludeComponent('bitrix:socserv.auth.form',
+                'flat',
                 array(
-                    "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
-                    "SUFFIX"=>"form",
+                    'AUTH_SERVICES' => $arResult['AUTH_SERVICES'],
+                    'AUTH_URL' => $arResult['CURR_URI']
                 ),
                 $component,
-                array("HIDE_ICONS"=>"Y")
+                array('HIDE_ICONS' => 'Y')
             );
             ?>
         <?endif?>
-
-        <?if($arResult["AUTH_SERVICES"]):?>
-            <?
-            $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "",
-                array(
-                    "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
-                    "AUTH_URL"=>$arResult["AUTH_URL"],
-                    "POST"=>$arResult["POST"],
-                    "POPUP"=>"Y",
-                    "SUFFIX"=>"form",
-                ),
-                $component,
-                array("HIDE_ICONS"=>"Y")
-            );
-            ?>
-        <?endif*/?>
-        <br><br>
+        <!-- / Авторизация через соцсети -->
         <div class="col-12">
             <?if($arResult["NEW_USER_REGISTRATION"] == "Y"):?>
                 <noindex>
