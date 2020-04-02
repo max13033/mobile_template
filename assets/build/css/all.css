@@ -15889,7 +15889,7 @@ button:hover{
     padding: 4px 0;
     background-color: #027;
     z-index:99;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .header-menu-active{
     position:fixed;
