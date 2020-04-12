@@ -15842,7 +15842,7 @@ button:hover{
 }
 #search_popup{
 	position: absolute;
-    left: 150%;
+    left: 100%;
     display: flex;
     direction: row;
     justify-content: space-between;
@@ -15889,9 +15889,11 @@ button:hover{
     padding: 4px 0;
     background-color: #027;
     z-index:99;
+    overflow: hidden;
 }
 .header-menu-active{
     position:fixed;
+    top:0;
     max-width:700px;
     width: 100%;
 }
@@ -16798,7 +16800,7 @@ button:hover{
 .popup__title{
     padding-top: 8px;
     padding-bottom:8px;
-    margin-bottom: 15px;
+/*    margin-bottom: 15px;*/
     padding-left: 15px;
     text-align:left;
     font-size:16px;
@@ -16850,15 +16852,19 @@ button:hover{
     margin-right:10px
 }
 .popup__items{
-    margin-top:15px
+    padding-left: 28px;
 }
+.popup__items:last-child{
+    margin-bottom: 10px;
+}    
 .popup__item{
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
     align-items:flex-start;
     font-size:16px;
-    margin-bottom:15px;
+    margin-top:13px;
+    margin-bottom:25px;
     color:#fff
 }
 .popup__item:hover{

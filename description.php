@@ -1,6 +1,6 @@
 <?
 $arTemplate = array (
-  'NAME' => 'MOBILE CUSTOM Freeweb - интернет-магазин',
+  'NAME' => 'MOBILE m2',
   'DESCRIPTION' => '',
   'SORT' => '',
   'TYPE' => '',

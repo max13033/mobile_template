@@ -25,9 +25,9 @@
                 if (!empty($arItem["PROPERTIES"]["MOBILE_IMAGE"]['VALUE'])) {
                     $background = CFile::GetPath($arItem["PROPERTIES"]["MOBILE_IMAGE"]['VALUE']);
                 }
-                if (!empty($arItem["PROPERTIES"]["PICTURE_SVG"]['VALUE'])) {    //  если в свойствах есть SVG картинка - отображать её вместо JPG
+                /*  if (!empty($arItem["PROPERTIES"]["PICTURE_SVG"]['VALUE'])) {    //  если в свойствах есть SVG картинка - отображать её вместо JPG
                     $background = CFile::GetPath($arItem["PROPERTIES"]["PICTURE_SVG"]['VALUE']);
-                }                
+                }   */              
 
                 if($arItem["PROPERTIES"]["URL_STRING"]["VALUE"]) {
                     $link = $arItem["PROPERTIES"]["URL_STRING"]["VALUE"];

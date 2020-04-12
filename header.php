@@ -62,7 +62,7 @@ global $APPLICATION;
                         
                         <div id = "search_popup">    <!-- выплывающая панель поиска -->
                             <div class = "search_button search-input-div">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt="">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt="Поиск">
                             </div>
                             <div class = "search-input-div">
                                 <form>

@@ -52,7 +52,7 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
             <input type="password"
                    name="USER_PASSWORD"
                    maxlength="200"
-                   size="15"
+                   size="13"
                    autocomplete="off"
                    placeholder="<?=GetMessage("AUTH_PASSWORD")?>">
 
@@ -96,37 +96,23 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']) ShowMessage($arResult
     </form>
 
     <div class="row">
-
-        <?if($arResult["AUTH_SERVICES"]):?>
+        <!-- Авторизация через соцсети -->
+        <?
+        if($arResult["AUTH_SERVICES"]):?>
             <p class="modal-enter-title col-12"><?=GetMessage("socserv_as_user_form")?></p>
             <?
-            $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "icons",
+            $APPLICATION->IncludeComponent('bitrix:socserv.auth.form',
+                'flat',
                 array(
-                    "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
-                    "SUFFIX"=>"form",
+                    'AUTH_SERVICES' => $arResult['AUTH_SERVICES'],
+                    'AUTH_URL' => $arResult['CURR_URI']
                 ),
                 $component,
-                array("HIDE_ICONS"=>"Y")
+                array('HIDE_ICONS' => 'Y')
             );
             ?>
         <?endif?>
-
-        <?if($arResult["AUTH_SERVICES"]):?>
-            <?
-            $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "",
-                array(
-                    "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
-                    "AUTH_URL"=>$arResult["AUTH_URL"],
-                    "POST"=>$arResult["POST"],
-                    "POPUP"=>"Y",
-                    "SUFFIX"=>"form",
-                ),
-                $component,
-                array("HIDE_ICONS"=>"Y")
-            );
-            ?>
-        <?endif?>
-
+        <!-- / Авторизация через соцсети -->
         <div class="col-12">
             <?if($arResult["NEW_USER_REGISTRATION"] == "Y"):?>
                 <noindex>
@@ -192,9 +178,66 @@ elseif($arResult["FORM_TYPE"] == "otp"):
 else:
 ?>
 
+<style type="text/css">
+    .logged tr + tr > td{
+        padding-top: 15px;
+
+    }
+    .logged span{
+        color: #99f;
+        font: 8pt; 
+    }
+    .logged span + span{
+        color: #000;
+        font: 12pt;
+    }
+    .logged input[type=submit]{
+        color: #fff;
+        background-color: #aaa;
+        border: 0;
+        border-radius: 5px
+    }    
+    .logged td + td{
+        padding-left: 30px;
+        text-align: right;
+    }
+    .logged button{
+        color: #fff;
+        background-color: #027; 
+        border-radius: 5px;        
+    }
+
+</style>
+
+
 <form action="<?=$arResult["AUTH_URL"]?>">
-	<table width="95%">
+	<table width="95%" class = "logged">
 		<tr>
+            <td>
+                <img src="<?=SITE_TEMPLATE_PATH?>/ava.png">
+            </td>
+            <td align="right">
+                <span>  <?=$arResult["USER_LOGIN"]?>    <br>    </span>    
+                <span>  <?=$arResult["USER_NAME"]?> </span>
+            </td>      
+        </tr>
+        <tr>
+            <td align="center">
+                <?foreach ($arResult["GET"] as $key => $value):?>
+                    <input type="hidden" name="<?=$key?>" value="<?=$value?>" />
+                <?endforeach?>
+                <input type="hidden" name="logout" value="yes" />
+                <input type="submit" name="logout_butt" value="<?=GetMessage("AUTH_LOGOUT_BUTTON")?>" />
+            </td>
+            <td>
+                <a href="<?=$arResult["PROFILE_URL"]?>" title="<?=GetMessage("AUTH_PROFILE")?>">
+                    <button>    <?=GetMessage("AUTH_PROFILE")?>    </button>                        
+                </a>
+            </td>
+        </tr>
+<?  /*
+
+        <tr>
 			<td align="center">
 				<?=$arResult["USER_NAME"]?><br />
 				[<?=$arResult["USER_LOGIN"]?>]<br />
@@ -203,13 +246,14 @@ else:
 		</tr>
 		<tr>
 			<td align="center">
-			<?foreach ($arResult["GET"] as $key => $value):?>
-				<input type="hidden" name="<?=$key?>" value="<?=$value?>" />
-			<?endforeach?>
-			<input type="hidden" name="logout" value="yes" />
-			<input type="submit" name="logout_butt" value="<?=GetMessage("AUTH_LOGOUT_BUTTON")?>" />
+    			<?foreach ($arResult["GET"] as $key => $value):?>
+    				<input type="hidden" name="<?=$key?>" value="<?=$value?>" />
+    			<?endforeach?>
+    			<input type="hidden" name="logout" value="yes" />
+    			<input type="submit" name="logout_butt" value="<?=GetMessage("AUTH_LOGOUT_BUTTON")?>" />
 			</td>
 		</tr>
+*/        ?>
 	</table>
 </form>
 <?endif?>

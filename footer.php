@@ -140,12 +140,18 @@
                     <h5 class="modal-title" id="exampleModalLabel">Личный кабинет</h5>
                 </div>
                 <div class="modal-body">
-                            <?  $APPLICATION->IncludeComponent("bitrix:socserv.auth.split", "main", 
-                            array(
-                                "SUFFIX"=>"form", 
-                                "SHOW_PROFILES" => "Y",
-                                "ALLOW_DELETE" => "Y"),false);
-                            ?>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:system.auth.form",
+                        "mobile",
+                        Array(
+                            "COMPOSITE_FRAME_MODE" => "A",
+                            "COMPOSITE_FRAME_TYPE" => "AUTO",
+                            "FORGOT_PASSWORD_URL" => "/auth/forgot-password/",
+                            "PROFILE_URL" => "/personal/",
+                            "REGISTER_URL" => "/auth/registration/",
+                            "SHOW_ERRORS" => "N"
+                        )
+                    );?>
                 </div>
             </div>
         </div>
