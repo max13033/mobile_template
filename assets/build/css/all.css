@@ -6680,7 +6680,7 @@ button.close{
     width: 325px;
     height: 405px;
     margin: auto;
-    margin-top: 130px;
+    margin-top: 50px;
     pointer-events:none;
     box-sizing: border-box;
 }

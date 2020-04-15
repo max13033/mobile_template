@@ -1,6 +1,6 @@
 <?
 $arTemplate = array (
-  'NAME' => 'MOBILE m2',
+  'NAME' => 'MOBILE TEMPLATE',
   'DESCRIPTION' => '',
   'SORT' => '',
   'TYPE' => '',
