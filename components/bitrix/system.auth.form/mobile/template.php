@@ -177,7 +177,6 @@ elseif($arResult["FORM_TYPE"] == "otp"):
 <?
 else:
 ?>
-
 <style type="text/css">
     .logged tr + tr > td{
         padding-top: 15px;
@@ -185,17 +184,21 @@ else:
     }
     .logged span{
         color: #99f;
-        font: 8pt; 
+        font: 12pt; 
+        font-weight: 300;
+        line-height: 15px;
     }
     .logged span + span{
         color: #000;
-        font: 12pt;
+        font: 16pt;
+        font-weight: 300;
     }
     .logged input[type=submit]{
         color: #fff;
-        background-color: #aaa;
+        background-color: #DADADA;
         border: 0;
-        border-radius: 5px
+        border-radius: 6px;
+        height: 30px;
     }    
     .logged td + td{
         padding-left: 30px;
@@ -204,17 +207,17 @@ else:
     .logged button{
         color: #fff;
         background-color: #027; 
-        border-radius: 5px;        
+        border-radius: 6px;  
+        width: 132px;
+        height: 30px;      
     }
-
 </style>
-
 
 <form action="<?=$arResult["AUTH_URL"]?>">
 	<table width="95%" class = "logged">
 		<tr>
             <td>
-                <img src="<?=SITE_TEMPLATE_PATH?>/ava.png">
+                <img src="<?=SITE_TEMPLATE_PATH?>/components/bitrix/system.auth.form/mobile/images/AuthButt.svg">
             </td>
             <td align="right">
                 <span>  <?=$arResult["USER_LOGIN"]?>    <br>    </span>    
@@ -235,25 +238,6 @@ else:
                 </a>
             </td>
         </tr>
-<?  /*
-
-        <tr>
-			<td align="center">
-				<?=$arResult["USER_NAME"]?><br />
-				[<?=$arResult["USER_LOGIN"]?>]<br />
-				<a href="<?=$arResult["PROFILE_URL"]?>" title="<?=GetMessage("AUTH_PROFILE")?>"><?=GetMessage("AUTH_PROFILE")?></a><br />
-			</td>
-		</tr>
-		<tr>
-			<td align="center">
-    			<?foreach ($arResult["GET"] as $key => $value):?>
-    				<input type="hidden" name="<?=$key?>" value="<?=$value?>" />
-    			<?endforeach?>
-    			<input type="hidden" name="logout" value="yes" />
-    			<input type="submit" name="logout_butt" value="<?=GetMessage("AUTH_LOGOUT_BUTTON")?>" />
-			</td>
-		</tr>
-*/        ?>
 	</table>
 </form>
 <?endif?>
