@@ -57,8 +57,14 @@ global $APPLICATION;
             <div class="header-menu container">
                 <div class="row d-flex align-items-end justify-content-between ">
                     <div class="col-4 d-flex justify-content-start">
-                        <a href="javascript:void(0);" class="icon-B"><span></span><span></span><span></span></a>
-                        <a href="javascript:void(0);" class="search"><img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt=""></a>
+                        <a href="javascript:void(0);" class="icon-B">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <a href="javascript:void(0);" class="search">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/build/img/Search.svg" alt="">
+                        </a>
                         
                         <div id = "search_popup">    <!-- выплывающая панель поиска -->
                             <div class = "search_button search-input-div">
@@ -72,7 +78,16 @@ global $APPLICATION;
                             <div id = "cross">
                                 <span> &#215; </span>
                             </div>    
-                        </div>
+                        </div>  <!-- /выплывающая панель поиска -->
+                        
+                        <!-- search by DIGINETICA -->
+                        <script type="text/javascript">     
+                        var digiScript = document.createElement('script');
+                        digiScript.src = '//cdn.diginetica.net/772/client.js?ts=' + Date.now();
+                        digiScript.defer = true;
+                        digiScript.async = true;
+                        document.body.appendChild(digiScript);
+                        </script>
                     </div>
                     <div>
                         <? area('header_logo') ?>
