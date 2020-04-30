@@ -6,6 +6,7 @@ global $APPLICATION;
 <html lang="ru">
 <head>
     <meta charset="utf-8"/>
+    <meta name="theme-color" content="#027">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title><?$APPLICATION->ShowTitle()?></title>
     <?$APPLICATION->ShowMeta("viewport");?>
@@ -22,12 +23,12 @@ global $APPLICATION;
     <link href="<?=SITE_TEMPLATE_PATH?>/assets/build/css/all.css?v=dkjawdawhk" rel="stylesheet" />
     <? if (!hasGooAgent()) {?>
         <script>
-            (function(d) {
+            /*(function(d) {
                 var s = d.createElement('script');
                 s.defer = true;
                 s.src = 'https://multisearch.io/plugin/10685';
                 if (d.head) d.head.appendChild(s);
-            })(document);
+            })(document);   */
             cross.onclick = function(){
                 document.getElementById('search_popup').style.left = '150%';
             }
@@ -82,11 +83,11 @@ global $APPLICATION;
                         
                         <!-- search by DIGINETICA -->
                         <script type="text/javascript">     
-                        var digiScript = document.createElement('script');
-                        digiScript.src = '//cdn.diginetica.net/772/client.js?ts=' + Date.now();
-                        digiScript.defer = true;
-                        digiScript.async = true;
-                        document.body.appendChild(digiScript);
+                            var digiScript = document.createElement('script');
+                            digiScript.src = '//cdn.diginetica.net/772/client.js?ts=' + Date.now();
+                            digiScript.defer = true;
+                            digiScript.async = true;
+                            document.body.appendChild(digiScript);
                         </script>
                     </div>
                     <div>
