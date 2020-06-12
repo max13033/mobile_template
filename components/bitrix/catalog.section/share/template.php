@@ -20,15 +20,12 @@ use \Bitrix\Main\Localization\Loc;
  * |	<!-- component-end -->
  */
 $this->setFrameMode(true);
-//unset($arResult['ITEMS'][0]['PROPERTIES']);
-//pr($arResult['ITEMS'][0]);
 ?>
-<div class="swiper-container s3">
+<div class="ajax-swiper-actions" style="overflow:hidden;">
     <div class="swiper-wrapper">
         <?foreach ($arResult['ITEMS'] as $item){
-//            pr($item);
             ?>
-            <div class="swiper-slide">
+            <div class="swiper-slide" style="margin-left: 10px; margin-right:50px;">
                 <a href="<?=$item['DETAIL_PAGE_URL']?>" class="action__items-link">
                     <div class="action__img-wrap">
                         <div class="b-product__picture" style="background-image:url('<?=$item['PREVIEW_PICTURE']['SRC']?>')"></div>
@@ -38,8 +35,8 @@ $this->setFrameMode(true);
                             </div>
                         <?}?>
                     </div>
-                    <p class="action__text"><?=$item['~NAME']?></p>
-                    <p class="product__cost">
+                    <p class="action__text" style="margin-left:50px;"><?=$item['~NAME']?></p>
+                    <p class="product__cost" style="margin-left:50px; width: 100%;">
                         <?=$item['PRICES']['BASE']['PRINT_DISCOUNT_VALUE']?>
                         <?if($item['PRICES']['BASE']['DISCOUNT_VALUE']){?>
                             <span><?=$item['PRICES']['BASE']['PRINT_VALUE']?></span>
@@ -48,6 +45,13 @@ $this->setFrameMode(true);
                 </a>
             </div>
         <?}?>
-
     </div>
 </div>
+<script>
+    var swiper = new Swiper('.ajax-swiper-actions', {
+        slidesPerView: 2,
+        spaceBetween: 80,
+        freeMode: true,
+        slidesOffsetAfter: 580,
+    });
+</script>

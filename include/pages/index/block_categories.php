@@ -12,13 +12,13 @@
 
     $APPLICATION->IncludeComponent(
         "bitrix:catalog.section.list",
-        "popular_category",
+        "popular_category_valles",
         array(
             "ADD_SECTIONS_CHAIN" => "N",
-            "CACHE_FILTER" => "Y",
-            "CACHE_GROUPS" => "Y",
+            "CACHE_FILTER" => "N",
+            "CACHE_GROUPS" => "N",
             "CACHE_TIME" => "36000000",
-            "CACHE_TYPE" => "A",
+            "CACHE_TYPE" => "N",
             "COMPOSITE_FRAME_MODE" => "A",
             "COMPOSITE_FRAME_TYPE" => "AUTO",
             "COUNT_ELEMENTS" => "N",

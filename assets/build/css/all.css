@@ -6062,7 +6062,7 @@ tbody.collapse.show{
         border-bottom-right-radius:.25rem;
         border-bottom-left-radius:.25rem
     }
-    .card-group>.card:not(:first-child):not(:last-child):not(:only-child),    
+    .card-group>.card:not(:first-child):not(:last-child):not(:only-child),
     .card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-footer,
     .ard-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-header,
     .ard-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
@@ -6749,7 +6749,7 @@ button.close{
 .modal-body input::-moz-placeholder{
     color: #0034C9;
 }
-.modal-body input::-webkit-input-placeholder{ 
+.modal-body input::-webkit-input-placeholder{
     color: #0034C9;
 }
 .modal-footer{
@@ -13954,7 +13954,7 @@ img{
 }
 .modal-content .modal-body > div{
     position: relative;
-}    
+}
 .modal-content .modal-footer{
     border-top:none;
     padding-right:24px;

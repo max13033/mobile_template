@@ -23,7 +23,7 @@
             "CACHE_FILTER" => "N",
             "CACHE_GROUPS" => "Y",
             "CACHE_TIME" => "36000000",
-            "CACHE_TYPE" => "A",
+            "CACHE_TYPE" => "N",
             "COMPATIBLE_MODE" => "Y",
             "COMPOSITE_FRAME_MODE" => "A",
             "COMPOSITE_FRAME_TYPE" => "AUTO",

@@ -21,18 +21,18 @@ use \Bitrix\Main\Localization\Loc;
  */
 $this->setFrameMode(true);
 ?>
-<div class="swiper-container s6">
+<div class="ajax-swiper-popular" style="overflow: hidden">
     <div class="swiper-wrapper">
         <?foreach ($arResult['ITEMS'] as $item){?>
-            <div class="swiper-slide">
+            <div class="swiper-slide" style="margin-left: 10px;">
                 <a href="<?=$item['DETAIL_PAGE_URL']?>" class="product__slide-link">
                     <div class="product__img-wrap">
                         <div class="b-product__picture" style="background-image:url('<?=$item['PREVIEW_PICTURE']['SRC']?>')"></div>
                     </div>
-                    <p class="product__text">
+                    <p class="product__text" style="margin-left: 20px;">
                         <?=$item['~NAME']?>
                     </p>
-                    <p class="product__cost">
+                    <p class="product__cost" style="margin-left: 20px; width: 100%;">
                         <?=$item['PRICES']['BASE']['PRINT_DISCOUNT_VALUE']?>
                         <?if($item['PRICES']['BASE']['DISCOUNT_VALUE']){?>
                             <span><?//=$item['PRICES']['BASE']['PRINT_VALUE']?></span>   <!--  Временно закомментировал до выяснения -->
@@ -43,3 +43,11 @@ $this->setFrameMode(true);
         <?}?>
     </div>
 </div>
+<script>
+    var swiper = new Swiper('.ajax-swiper-popular', {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        freeMode: true,
+        slidesOffsetAfter: 560,
+    });
+</script>

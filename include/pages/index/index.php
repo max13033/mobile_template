@@ -7,7 +7,6 @@ $src .= "/include/pages/index/block_";
 
 require($src."main_slider.php");
 require($src."categories.php");
-
 if ( ! hasGooAgent() )
 {
     require($src."shares.php");
