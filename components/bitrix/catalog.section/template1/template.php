@@ -27,7 +27,7 @@ $this->setFrameMode(true);
             <div class="swiper-slide" style="margin-left: 10px;">
                 <a href="<?=$item['DETAIL_PAGE_URL']?>" class="product__slide-link">
                     <div class="product__img-wrap">
-                        <div class="b-product__picture" style="background-image:url('<?=$item['PREVIEW_PICTURE']['SRC']?>')"></div>
+                        <div class="b-product__picture" style="background-image:url('<?=$item['DETAIL_PICTURE']['SRC']?>')"></div>
                     </div>
                     <p class="product__text" style="margin-left: 20px;">
                         <?=$item['~NAME']?>

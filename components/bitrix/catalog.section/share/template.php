@@ -28,7 +28,7 @@ $this->setFrameMode(true);
             <div class="swiper-slide" style="margin-left: 10px; margin-right:50px;">
                 <a href="<?=$item['DETAIL_PAGE_URL']?>" class="action__items-link">
                     <div class="action__img-wrap">
-                        <div class="b-product__picture" style="background-image:url('<?=$item['PREVIEW_PICTURE']['SRC']?>')"></div>
+                        <div class="b-product__picture" style="background-image:url('<?=$item['DETAIL_PICTURE']['SRC']?>')"></div>
                         <? if ($item['RATIO_PRICE']['DISCOUNT_DIFF_PERCENT']){?>
                             <div class="action__items">
                                 <span>-<?=$item['RATIO_PRICE']['DISCOUNT_DIFF_PERCENT']?>%</span>
